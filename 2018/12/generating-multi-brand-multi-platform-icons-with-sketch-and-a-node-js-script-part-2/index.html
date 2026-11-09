@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+	<!-- [META TAGS] -->
+	<meta charset="UTF-8" />
+
+	<!-- [GENERAL] -->
+	<title>Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #2   – Didoo</title>
+
+	<!-- [MOBILE] -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- [FILE CSS] -->
+	<link rel="stylesheet" href="/wp-content/themes/mithosis/media/css/style.css" />
+
+	<!-- [FILE JS] -->
+	<script src="/wp-content/themes/mithosis/script/js/jquery.js"></script>
+	<script src="/wp-content/themes/mithosis/script/js/jquery.fitvids.js"></script>
+	<script src="/wp-content/themes/mithosis/script/js/interaction.js"></script>
+
+	<!-- [SEARCH ENGINES] -->
+	<meta name="robots" content="all" />
+
+	<!-- [ICONS] -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- [WP STUFF] -->
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	
+	<!-- [RSS FEEDS] -->
+			
+	<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.didoo.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.11"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.7.11' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='taxopress-frontend-css-css' href='/wp-content/plugins/simple-tags/assets/frontend/css/frontend.css?ver=3.27.0' type='text/css' media='all' />
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/simple-tags/assets/frontend/js/frontend.js?ver=3.27.0" id="taxopress-frontend-js-js"></script>
+<link rel="canonical" href="https://www.didoo.net/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-2/" />
+
+	<!--wp code prettify-->
+<!-- START - Open Graph and Twitter Card Tags 3.3.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Didoo"/>
+  <meta property="og:title" content="Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #2"/>
+  <meta property="og:url" content="https://www.didoo.net/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-2/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="This is the second part of a post about the creation of a pipeline that can take a Sketch file and export all the icons included in the file, in different formats, for different platforms, with the possibility of AB testing each icon.
+
+
+
+
+
+
+
+You can read the first part of the post here: http://www.d"/>
+  <meta property="og:image" content="https://www.didoo.net/wp-content/uploads/2019/11/source-files-finalised-1-1024x380.png"/>
+  <meta property="og:image:url" content="https://www.didoo.net/wp-content/uploads/2019/11/source-files-finalised-1-1024x380.png"/>
+  <meta property="article:published_time" content="2018-12-06T11:10:00+00:00"/>
+  <meta property="article:modified_time" content="2020-10-23T20:38:23+01:00" />
+  <meta property="og:updated_time" content="2020-10-23T20:38:23+01:00" />
+  <meta property="article:section" content="Design"/>
+  <meta property="article:author" content="https://www.facebook.com/cristianorastelli"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #2"/>
+  <meta itemprop="headline" content="Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #2"/>
+  <meta itemprop="description" content="This is the second part of a post about the creation of a pipeline that can take a Sketch file and export all the icons included in the file, in different formats, for different platforms, with the possibility of AB testing each icon.
+
+
+
+
+
+
+
+You can read the first part of the post here: http://www.d"/>
+  <meta itemprop="image" content="https://www.didoo.net/wp-content/uploads/2019/11/source-files-finalised-1-1024x380.png"/>
+  <meta itemprop="datePublished" content="2018-12-06"/>
+  <meta itemprop="dateModified" content="2020-10-23T20:38:23+01:00" />
+  <meta itemprop="author" content="Cristiano Rastelli"/>
+  <!--<meta itemprop="publisher" content="Didoo"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #2"/>
+  <meta name="twitter:url" content="https://www.didoo.net/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-2/"/>
+  <meta name="twitter:description" content="This is the second part of a post about the creation of a pipeline that can take a Sketch file and export all the icons included in the file, in different formats, for different platforms, with the possibility of AB testing each icon.
+
+
+
+
+
+
+
+You can read the first part of the post here: http://www.d"/>
+  <meta name="twitter:image" content="https://www.didoo.net/wp-content/uploads/2019/11/source-files-finalised-1-1024x380.png"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:creator" content="@https://twitter.com/areaweb"/>
+  <meta name="twitter:site" content="@areaweb"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.3.3 -->
+	
+
+</head>
+
+<body id="pagePost" class="post-template-default single single-post postid-2590 single-format-standard">
+
+	<header>
+		<div>
+
+			<!-- LOGO -->
+			<a href="/" rel="home">Didoo</a>
+
+			<!-- MENU -->
+			<nav>
+				<div class="menu-header-menu-container"><ul id="menu-header-menu" class="menu"><li id="menu-item-1047" class="blog menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1047"><a href="/">Blog</a></li>
+<li id="menu-item-1049" class="folio menu-item menu-item-type-custom menu-item-object-custom menu-item-1049"><a href="http://folio.didoo.net">Portfolio</a></li>
+<li id="menu-item-1048" class="about menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a href="/about/">About</a></li>
+</ul></div>			</nav>
+
+		</div>
+	</header>
+<article>
+
+	
+		<section>
+	
+			<!-- post titles -->
+			<div class="hgroup">
+			<h1>Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #2</h1>
+			 
+			<h2>Second part: the build script and the generation of the assets.</h2>
+						</div>
+	
+			<!-- featured image  -->
+				
+			<!-- post content/excerpt -->
+			<div class="wysiwyg content">
+
+				
+<p>This&nbsp;is&nbsp;the second part of a post about the creation of a pipeline that can take a Sketch file and export all the icons included in the file, in different formats, for different platforms, with the possibility of AB testing each icon.</p>
+
+
+
+<span id="more-2590"></span>
+
+
+
+<p>You can read the first part of the post here:&nbsp;<a href="/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-1/">/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-1/</a></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="380" src="/wp-content/uploads/2019/11/source-files-finalised-1-1024x380.png" alt="" class="wp-image-2591" srcset="/wp-content/uploads/2019/11/source-files-finalised-1-1024x380.png 1024w, /wp-content/uploads/2019/11/source-files-finalised-1-800x297.png 800w, /wp-content/uploads/2019/11/source-files-finalised-1-768x285.png 768w, /wp-content/uploads/2019/11/source-files-finalised-1.png 1240w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>The Sketch files, with all the icons collected, styled and properly named, were ready. Now it was time to start writing the code.</p>
+
+
+
+<p>Suffice to say, the process was very much a trial and error: after the&nbsp;<strong>important initial code core</strong>, developed by my team lead&nbsp;<a href="https://medium.com/@nikhilverma" target="_blank" rel="noreferrer noopener"><strong>Nikhil Verma</strong></a>&nbsp;(who set the script foundations), I went through an incremental process that required at least three phases of refactoring and quite a few revisions. For this reason, I won’t go into too much detail on how the script was developed, but rather focus on how the script works today, in its final shape.</p>
+
+
+
+<h4 class="wp-block-heading" id="693d">The build script</h4>
+
+
+
+<p>The build script — written in Node.js — is relatively straightforward in its flow: once imported the dependencies, declared the list of Sketch files to process (as a list of brands, and for each brand a list of files for that brand) and checked that Sketch is installed on the client, the script loops on the array of brands, and for each one of these it executes these steps in sequence:</p>
+
+
+
+<ol class="wp-block-list"><li>get the design tokens for the brand (we need the color values)</li><li>clone the Sketch files associated with the brand, unzip them to expose the internal JSON files, and manipulate some of the internal values of these JSON files (more on this later)</li><li>read the relevant meta-data out from Sketch JSON files (<em>document.json</em>,&nbsp;<em>meta.json</em>&nbsp;and&nbsp;<em>pages/pageUniqueID.json</em>); in particular we need the list of shared styles and the list of assets/icons contained in the files</li><li>after a few further manipulations of the Sketch JSON files, zip them back and, using the (cloned and updated) Sketch files, export and generate the final output files for the three platforms (iOS, Android, Mobile Web)</li></ol>
+
+
+
+<p>You can view the relevant parts of the main build script here:</p>
+
+
+
+<pre class="wp-block-preformatted">// ... modules imports here
+
+const <strong>SKETCH_FILES</strong> = {
+  badoo: ['icons_common'],
+  blendr: ['icons_common', 'icons_blendr'],
+  fiesta: ['icons_common', 'icons_fiesta'],
+  hotornot: ['icons_common', 'icons_hotornot'],
+};
+
+const SKETCH_FOLDER_PATH = path.resolve(__dirname, '../src/');
+const SKETCH_TEMP_PATH = path.resolve(SKETCH_FOLDER_PATH, 'tmp');
+const DESTINATION_PATH = path.resolve(__dirname, '../dist');
+
+console.log('Build started...');
+
+if (sketchtool.check()) {
+  console.log(`Processing Sketch file via ${sketchtool.version()}`);
+  <strong>build();</strong>
+} else {
+  console.info('You need Sketch installed to run this script');
+  process.exit(1);
+}
+
+// ----------------------------------------
+
+function <strong>build()</strong> {
+  // be sure to start with a blank slate
+  del.sync([SKETCH_TEMP_PATH, DESTINATION_PATH]);
+
+  // process all the brands declared in the list of Sketch files
+  Object.keys(SKETCH_FILES).<strong>forEach</strong>(async (<strong>brand</strong>) =&gt; {
+
+    // get the design tokens for the brand
+    const <strong>brandTokens</strong> = getDesignTokens(brand);
+    
+    // prepare the Sketch files (unzipped) and get a list of them
+    const <strong>sketchUnzipFolders</strong> = await <strong>prepareSketchFiles</strong>({
+      brand,
+      sketchFileNames: SKETCH_FILES[brand],
+      sketchFolder: SKETCH_FOLDER_PATH,
+      sketchTempFolder: SKETCH_TEMP_PATH
+    });
+
+    // get the Sketch metadata
+    const sketchMetadata = <strong>getSketchMetadata</strong>(sketchUnzipFolders);
+    const <strong>sketchDataSharedStyles</strong> = sketchMetadata.sharedStyles;
+    const <strong>sketchDataAssets</strong> = sketchMetadata.assetsMetadata;
+
+<strong>    generateAssetsPDF</strong>({
+      platform: 'ios',
+      brand,
+      brandTokens,
+      sketchDataSharedStyles,
+      sketchDataAssets
+    });
+    <strong>generateAssetsSVGDynamicMobileWeb</strong>({
+      platform: 'mw',
+      brand,
+      brandTokens,
+      sketchDataSharedStyles,
+      sketchDataAssets
+    });
+    <strong>generateAssetsVectorDrawableDynamicAndroid</strong>({
+      platform: 'android',
+      brand,
+      brandTokens,
+      sketchDataSharedStyles,
+      sketchDataAssets
+    });
+  });
+}</pre>
+
+
+
+<p>Actually, the entire pipelin code is much more complex than this, and the complexity lies in the&nbsp;<strong>prepareSketchFiles, getSketchMetadata</strong>&nbsp;and&nbsp;<strong>generateAssets[format][platform]</strong>&nbsp;functions. I’ll try to explain them in more detail below.</p>
+
+
+
+<h5 class="wp-block-heading" id="b3e9">Preparing the Sketch files</h5>
+
+
+
+<p>The first step in the build process is the preparation of the Sketch files, so that they can be used later for the export of the assets for the different platforms.</p>
+
+
+
+<p>The files associated with the brand — for Blendr, for example, the files&nbsp;<em>icons_common.sketch</em>&nbsp;and&nbsp;<em>icons_blendr.sketch</em>&nbsp;— are initially cloned in a temporary folder (more precisely, in a subfolder named after the brand that is being processed) and unzipped.</p>
+
+
+
+<p>Then the internal JSON files are processed, to a prefix added to the assets that are to undergo AB testing, so that when exported they will be saved in a subfolder with a predefined name (the unique name of the experiment). To understand which assets are for testing, we simply check if the name of the page in which they are stored in Sketch is prefixed with&nbsp;<em>“XP_”</em>.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="435" src="/wp-content/uploads/2019/11/sketch-layers-name-prefixing-1024x435.png" alt="" class="wp-image-2594" srcset="/wp-content/uploads/2019/11/sketch-layers-name-prefixing-1024x435.png 1024w, /wp-content/uploads/2019/11/sketch-layers-name-prefixing-800x340.png 800w, /wp-content/uploads/2019/11/sketch-layers-name-prefixing-768x326.png 768w, /wp-content/uploads/2019/11/sketch-layers-name-prefixing-1536x653.png 1536w, /wp-content/uploads/2019/11/sketch-layers-name-prefixing.png 1600w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>A comparison of the layer names, inside the Sketch files,&nbsp;<strong>before</strong>&nbsp;and&nbsp;<strong>after</strong>&nbsp;the update.</figcaption></figure>
+
+
+
+<p>In the example above, when exported the assets will be saved in the subfolder&nbsp;<em>“this__is_an_experiment”</em>, with a filename&nbsp;<em>“icon-name[variant-name].ext”</em>.</p>
+
+
+
+<h5 class="wp-block-heading" id="275c">Reading the Sketch metadata</h5>
+
+
+
+<p>The second important step in the process is to get all the relevant meta-data out of the Sketch files, in particular out of their internal JSON files. As explained above, these files are the two main files (<em>document.json</em>&nbsp;and&nbsp;<em>meta.json</em>) and the pages files (<em>pages/pageUniqueId.json</em>).</p>
+
+
+
+<p>The&nbsp;<em>document.json file</em>&nbsp;is used to obtain the list of the Shared Styles, which appear under the&nbsp;<em>layerStyles</em>&nbsp;object property:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "_class": "document",<br>  "do_objectID": "45D2DA82-B3F4-49D1-A886-9530678D71DC",<br>  "colorSpace": 1,<br>  ...<br>  "<strong>layerStyles</strong>": {<br>    "_class": "sharedStyleContainer",<br>    "objects": [<br>      {<br>        "_class": "<strong>sharedStyle</strong>",<br>        "do_objectID": "9BC39AAD-CDE6-4698-8EA5-689C3C942DB4",<br>        "name": "<strong>features/feature-like</strong>",<br>        "value": {<br>          "_class": "style",<br>          "<strong>fills</strong>": [<br>            {<br>              "_class": "fill",<br>              "isEnabled": true,<br>              "<strong>color</strong>": {<br>                "_class": "color",<br>                "<strong>alpha</strong>": 1,<br>                "<strong>blue</strong>": 0.10588235408067703,<br>                "<strong>green</strong>": 0.4000000059604645,<br>                "<strong>red</strong>": 1<br>              },<br>              "fillType": 0,<br>              "noiseIndex": 0,<br>              "noiseIntensity": 0,<br>              "patternFillType": 1,<br>              "patternTileScale": 1<br>            }<br>          ],<br>          "blur": {...},<br>          "startMarkerType": 0,<br>          "endMarkerType": 0,<br>          "miterLimit": 10,<br>          "windingRule": 1<br>        }<br>      },<br>      ...</pre>
+
+
+
+<p>For each style, we store some basic information in a key-value object. This will be used later whenever we need to retrieve the name of a style based on its unique ID (in Sketch, the&nbsp;<em>do_objectID</em>&nbsp;property):</p>
+
+
+
+<pre class="wp-block-preformatted">const parsedSharedStyles = {};<br>parsedDocument.<strong>layerStyles</strong>.objects.<strong>forEach</strong>((object) =&gt; {<br>  <strong>parsedSharedStyles</strong>[object.<strong>do_objectID</strong>] = {<br>    <strong>name</strong>: object.name,<br>    <strong>isFill</strong>: _.get(object, 'value.fills[0].color') !== undefined,<br>    <strong>isBorder</strong>: _.get(object, 'value.borders[0].color') !== undefined,<br>  };<br>});</pre>
+
+
+
+<p>At this point, we move on the&nbsp;<em>meta.json</em>&nbsp;file to get the list of pages, in particular we need their&nbsp;<em>unique-id</em>&nbsp;and&nbsp;<em>name</em>:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "commit": "623a23f2c4848acdbb1a38c2689e571eb73eb823",<br>  "<strong>pagesAndArtboards</strong>": {<br>    "<strong>EE6BE8D9-9FAD-4976-B0D8-AB33D2B5DBB7</strong>": {<br>      "name": "<strong>Icons</strong>",<br>      "artboards": {<br>        "3275987C-CE1B-4369-B789-06366EDA4C98": {<br>          "name": "badge-feature-like"<br>        },<br>        "C6992142-8439-45E7-A346-FC35FA01440F": {<br>          "name": "badge-feature-crush"<br>        },<br>        ...<br>        "7F58A1C4-D624-40E3-A8C6-6AF15FD0C32D": {<br>          "name": "tabbar-livestream"<br>        }<br>        ...<br>      }<br>    },<br>    "<strong>ACF82F4E-4B92-4BE1-A31C-DDEB2E54D761</strong>": {<br>      "name": "<strong>XP_this__is_an_experiment</strong>",<br>      "artboards": {<br>        "31A812E8-D960-499F-A10F-C2006DDAEB65": {<br>          "name": "this__is_an_experiment/tabbar-livestream[variant1]"<br>        },<br>        "20F03053-ED77-486B-9770-32E6BA73A0B8": {<br>          "name": "this__is_an_experiment/tabbar-livestream[variant2]"<br>        },<br>        "801E65A4-3CC6-411B-B097-B1DBD33EC6CC": {<br>          "name": "this__is_an_experiment/tabbar-livestream[control]"<br>        }<br>      }<br>    },</pre>
+
+
+
+<p>Then, for every page we read the corresponding JSON file under the&nbsp;<em>pages</em>&nbsp;folder (as already said, the filename is&nbsp;<em>[pageUniqueId].json</em>), and we go through the assets contained in that page (they appear as layers). In this way, for every icon we get its&nbsp;<strong>name</strong>, its&nbsp;<strong>width/height</strong>, the Sketch&nbsp;<strong>meta-data</strong>&nbsp;for that layer icon, and if it’s on an&nbsp;<strong>experiment</strong>&nbsp;page, the name of the&nbsp;<strong>AB test</strong>&nbsp;in question, and the name of the&nbsp;<strong>variant</strong>&nbsp;for that icon.</p>
+
+
+
+<p><em>Notice: the “page.json” object is very complex, so I won’t go into it here. If you are curious and want to see what it looks like, I suggest you to create a new, blank Sketch file, add some content in it, and save it; then rename its extension in zip, unzip it and look into one of the files that appear under the “pages” folder.</em></p>
+
+
+
+<p>While processing the artboards, we also create a&nbsp;<strong>list of experiments</strong>&nbsp;(with their corresponding assets) that will be used later to determine which icon variants are used and for which experiment, associating the name of the icon variants to the “icon base” object.</p>
+
+
+
+<p>For each Sketch file being processed that is associated with the brand, we produce an&nbsp;<em>assetsMetadata</em>&nbsp;object that looks like this:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>navigation-bar-edit</strong>": {<br>    "do_objectID": "86321895-37CE-4B3B-9AA6-6838BEDB0977",<br>    ...sketch_artboard_properties,<br>    "name": "navigation-bar-edit",<br>    <strong>"assetname": "navigation-bar-edit",</strong><br>    <strong>"source": "icons_common",</strong><br>    "width": 48,<br>    "height": 48<br>    "layers": [<br>      {<br>        "do_objectID": "A15FA03C-DEA6-4732-9F85-CA0412A57DF4",<br>        "name": "Path",<br>        ...sketch_layer_properties,<br>        <strong>"sharedStyleID": "6A3C0FEE-C8A3-4629-AC48-4FC6005796F5",</strong><br>        "style": {<br>          ...<br>          "fills": [<br>            {<br>              "_class": "fill",<br>              "isEnabled": true,<br>              "color": {<br>                "_class": "color",<br>                "alpha": 1,<br>                "blue": 0.8784313725490196,<br>                "green": 0.8784313725490196,<br>                "red": 0.8784313725490196<br>              },<br>            }<br>          ],<br>          "miterLimit": 10,<br>          "startMarkerType": 0,<br>          "windingRule": 1<br>        },<br>      },<br>    ],<br>    ...<br>  },<br>  "<strong>experiment-name/navigation-bar-edit[variant]</strong>": {<br>    "do_objectID": "00C0A829-D8ED-4E62-8346-E7EFBC04A7C7",<br>    ...sketch_artboard_properties,<br>    "name": "experiment-name/navigation-bar-edit[variant]",<br>    <strong>"assetname": "navigation-bar-edit"</strong>,<br>    "source": "icons_common",<br>    "width": 48,<br>    "height": 48<br>    ...</pre>
+
+
+
+<p>As you can see, the same “icon” (in this case&nbsp;<em>navigation-bar-edit</em>) can have multiple “assets” associated with it, in term of experiments. But the same icon can appear with the same name in a second Sketch file associated with the brand, and this is&nbsp;<strong>very useful</strong>: it’s the trick we have used, to compile a common set of icons and then define specific different icon variants depending on the brand. That’s why we declared the Sketch files associated with each particular brand as an array:</p>
+
+
+
+<pre class="wp-block-preformatted">const SKETCH_FILES = {
+  badoo: ['icons_common'],
+  blendr: <strong>['icons_common', 'icons_blendr'],</strong>
+  fiesta: ['icons_common', 'icons_fiesta'],
+  hotornot: ['icons_common', 'icons_hotornot'],
+};</pre>
+
+
+
+<p>Because in this case the order matters. And in fact, in the function&nbsp;<em>getSketchMetadata</em>, called by the build script, we don’t return the&nbsp;<em>assetsMetadata</em>&nbsp;objects (one per file) as a list, but rather do a&nbsp;<strong>deep merge</strong>&nbsp;of each object, one into the other, and then we return a&nbsp;<strong>single merged&nbsp;<em>assetsMetadata</em></strong>&nbsp;object.</p>
+
+
+
+<p>This is nothing more than the “logical” merge of the Sketch files, and their assets, into one single file. But the logic is not actually as simple as it looks. Here is the schema that we had to create to figure out what happens when there are icons with the same name (possibly under AB testing) in different files associated with the same brand:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="568" src="/wp-content/uploads/2019/11/abtesting_merge_schema-1024x568.png" alt="" class="wp-image-2595" srcset="/wp-content/uploads/2019/11/abtesting_merge_schema-1024x568.png 1024w, /wp-content/uploads/2019/11/abtesting_merge_schema-800x444.png 800w, /wp-content/uploads/2019/11/abtesting_merge_schema-768x426.png 768w, /wp-content/uploads/2019/11/abtesting_merge_schema.png 1074w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>The logical schema of how the “overriding” of the same icon works, between a common/shared set of icons and icons specifically designed for white-labels (also considering the case of AB testing)</figcaption></figure>
+
+
+
+<h5 class="wp-block-heading" id="c7d2">Generating the final files in different formats for different platforms</h5>
+
+
+
+<p>The last step of the process is the actual generation of the icon files with different formats for the different platforms (PDF for iOS, SVG/JSX for Web, and VectorDrawable for Android).</p>
+
+
+
+<p>As you can see from the number of parameters passed to the functions&nbsp;<em>generateAssets[format][platform]</em>&nbsp;this is the most complex part of the pipeline. Here is where&nbsp;<strong>the process starts to split and diverge</strong>&nbsp;for the different platforms. See below the complete logical flow of the script, and how the part related to the generation of the assets&nbsp;<strong>splits in three similar but non identical flows</strong>:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="1244" src="/wp-content/uploads/2019/11/pipeline-schema-1024x1244.png" alt="" class="wp-image-2596" srcset="/wp-content/uploads/2019/11/pipeline-schema-1024x1244.png 1024w, /wp-content/uploads/2019/11/pipeline-schema-800x972.png 800w, /wp-content/uploads/2019/11/pipeline-schema-768x933.png 768w, /wp-content/uploads/2019/11/pipeline-schema-1264x1536.png 1264w, /wp-content/uploads/2019/11/pipeline-schema-1685x2048.png 1685w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>In order to generate the final assets with the correct colours associated with the brand that is being processed, we need to do another set of&nbsp;<strong>manipulations</strong>&nbsp;on the&nbsp;<strong>Sketch JSON</strong>&nbsp;files: we iteratively loop over every layer that has a shared style applied, and&nbsp;<strong>replace the colour values</strong>&nbsp;with the colours from the design tokens for the brand.</p>
+
+
+
+<p>For the&nbsp;<strong>Android</strong>&nbsp;generation, an extra manipulation is required (more on this later): we change every layer’s&nbsp;<strong>fill-rule property</strong>&nbsp;from&nbsp;<em>even-odd</em>&nbsp;to&nbsp;<em>non-zero</em>&nbsp;(this is controlled by the “<strong>windingRule</strong>” property in the JSON object, where “1” means “even-odd” and “0” means “non-zero”).</p>
+
+
+
+<p>Having completed these manipulations, we compress the Sketch JSON files back into a standard Sketch file, so that it can be processed to export the assets with the updated properties (the cloned and updated files are absolutely normal Sketch files: they can be opened in Sketch, viewed, edited, saved, etc.).</p>
+
+
+
+<p>At this point we can use&nbsp;<strong>sketchtool</strong>&nbsp;(<a href="https://github.com/julianburr/sketchtool-cli" target="_blank" rel="noreferrer noopener">in a node wrapper</a>) to automatically export all the assets in specific formats for specific platforms. For each file associated with a brand (more correctly, its cloned and updated version) we run this command:</p>
+
+
+
+<pre class="wp-block-preformatted"><strong>sketchtool</strong>.run(`<strong>export slices</strong> ${<strong>cloneSketchFile</strong>} --<strong>formats=svg</strong> <em>--scales=1 </em>--output=${destinationFolder} <strong>--overwriting</strong>`);</pre>
+
+
+
+<p>As you might guess, this command exports the assets in a specific format, applying an optional scaling (for now we always keep the original scale), into a destination folder. The&nbsp;<em>&#8211;overwriting</em>&nbsp;option is key here: in the same way that we do a “deep merge” of the assetsMetadata objects (which amounts to a “logical merge” of the Sketch files), when we export we do it from multiple files into the same folder (unique per brand/platform). This means that if an asset — identified by its layer name — already existed in a previous Sketch file, it will be overwritten by the following export. Which, again, is nothing more than a “merge” operation.</p>
+
+
+
+<p>In this case, though, we may have some assets which are “ghosts”. This happens when an icon is AB-tested in a file, but overwritten in a subsequent file. In such cases, the variant files are exported into the destination folder, referenced in the&nbsp;<em>assetsMetadata</em>&nbsp;object as asset (with its key and properties), but not associated to any “base” asset (because of the deep merge of the&nbsp;<em>assetsMetadata</em>&nbsp;objects). These files will be removed in a later step, prior to completion of the process.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>As mentioned above, we need&nbsp;<strong>different final formats</strong>&nbsp;for different platforms. For&nbsp;<strong>iOS</strong>&nbsp;we want&nbsp;<strong>PDF files</strong>, and we can export them directly with the&nbsp;<em>sketchtool</em>&nbsp;command. While, for&nbsp;<strong>Mobile Web</strong>&nbsp;we want&nbsp;<strong>JSX</strong>&nbsp;files, and for&nbsp;<strong>Android</strong>&nbsp;we want&nbsp;<strong>VectorDrawable</strong>&nbsp;files; for this reason&nbsp;<strong>we export the assets in SVG&nbsp;</strong>format into an intermediate folder, and then we subject them to further processing.</p>
+
+
+
+<h5 class="wp-block-heading" id="1ab9">PDF files for iOS</h5>
+
+
+
+<p>Strangely enough, PDF is the (only?) format supported by Xcode and OS/iOS for importing and rendering vector assets (<a href="https://www.quora.com/Why-does-Xcode-uses-PDF-for-vector-assets-instead-svg" target="_blank" rel="noreferrer noopener">here is a short explanation</a>&nbsp;of the technical reasons behind this choice by Apple).</p>
+
+
+
+<p>Since we can export directly in PDF via Sketchtool, there is no need for extra steps for this platform: we simply save the files directly in the destination folder, and that’s it.</p>
+
+
+
+<h5 class="wp-block-heading" id="fcf3">React/JSX files for web</h5>
+
+
+
+<p>In the case of&nbsp;<strong>Web</strong>, we use a Node library called&nbsp;<a href="https://github.com/smooth-code/svgr" target="_blank" rel="noreferrer noopener"><strong>svgr</strong></a>&nbsp;that converts plain SVG files into React components. But we want to do something even more powerful: we want to “dynamically paint” the icon at runtime, with the colours coming from the design tokens. For this reason, just before the conversion, we replace in the SVG the&nbsp;<em>fill</em>&nbsp;values of the paths that originally had a shared style applied, with the corresponding token value associated with that style.</p>
+
+
+
+<p>So, if this is the file&nbsp;<em>badge-feature-like.svg</em>&nbsp;exported from Sketch:</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br>&lt;svg width="128px" height="128px" viewBox="0 0 128 128" version="1.1" xmlns="<a href="http://www.w3.org/2000/svg" target="_blank" rel="noreferrer noopener">http://www.w3.org/2000/svg</a>" xmlns:xlink="<a href="http://www.w3.org/1999/xlink" target="_blank" rel="noreferrer noopener">http://www.w3.org/1999/xlink</a>"&gt;<br>  &lt;!-- Generator: sketchtool 52.2 (67145) - <a href="http://www.bohemiancoding.com/sketch" target="_blank" rel="noreferrer noopener">http://www.bohemiancoding.com/sketch</a> --&gt;<br>  &lt;title&gt;badge-feature-like&lt;/title&gt;<br>  &lt;desc&gt;Created with sketchtool.&lt;/desc&gt;<br>  &lt;g id="<strong>Icons</strong>" fill="none" fill-rule="evenodd"&gt;<br>    &lt;g id="<strong>badge-feature-like</strong>"&gt;<br>      &lt;circle <strong>id="circle"</strong> <strong>fill="#E71032"</strong> cx="64" cy="64" r="64"&gt;<br>      &lt;path id="Shape" fill="#FFFFFF" d="M80.4061668,..."&gt;&lt;/path&gt;<br>    &lt;/g&gt;<br>  &lt;/g&gt;<br>&lt;/svg&gt;</pre>
+
+
+
+<p>the final&nbsp;<em>badge-feature-like.js</em>&nbsp;asset/icon will look like this:</p>
+
+
+
+<pre class="wp-block-preformatted">/* This file is generated automatically - DO NOT EDIT */<br>/* eslint-disable max-lines,max-len,camelcase */<br>const <strong>React</strong> = require('react');module.exports = function <strong>badge_feature_like</strong>({ <strong>tokens</strong> }) {<br>  return (<br>    &lt;svg data-origin="pipeline" viewBox="0 0 128 128"&gt;<br>      &lt;g fill="none" fillRule="evenodd"&gt;<br>        &lt;circle <strong>fill={tokens.TOKEN_COLOR_FEATURE_LIKED_YOU}</strong> cx={64} cy={64} r={64} /&gt;<br>        &lt;path fill="#FFF" d="M80.4061668,..." /&gt;<br>      &lt;/g&gt;<br>    &lt;/svg&gt;<br>  );<br>};</pre>
+
+
+
+<p>As you can see, we have replaced the static value for the&nbsp;<em>fill</em>&nbsp;colour of the circle, with a dynamic one, that takes its value from the design tokens (these will be made available to the React&nbsp;<em>&lt;Icon/&gt;</em>&nbsp;component via Context API, but that’s another story).</p>
+
+
+
+<p>This replacement is made possible through the Sketch meta-data for the asset stored in the&nbsp;<em>assetsMetadata</em>&nbsp;object: looping recursively through the asset’s layers, it’s possible to create a DOM selector (in the case above, it would be&nbsp;<em>#Icons #badge-feature-like #circle</em>) and use it to find the node in the SVG tree, and replace the value of its&nbsp;<em>fill</em>&nbsp;attribute (for this operation we use the&nbsp;<a href="https://github.com/cheeriojs/cheerio" target="_blank" rel="noreferrer noopener">cheerio</a>&nbsp;library).</p>
+
+
+
+<h5 class="wp-block-heading" id="b226">VectorDrawable files for Android</h5>
+
+
+
+<p>Android supports vector graphics using its custom vector format, called&nbsp;<a href="https://developer.android.com/reference/android/graphics/drawable/VectorDrawable" target="_blank" rel="noreferrer noopener">VectorDrawable</a>. Usually the conversion from SVG to VectorDrawable is done&nbsp;<a href="https://developer.android.com/studio/write/vector-asset-studio#svg" target="_blank" rel="noreferrer noopener">directly within Android Studio</a>&nbsp;by the developers. But here we wanted to automate the entire process, so we needed to find a way to convert them via code.</p>
+
+
+
+<p>After looking at different libraries and tools, we decided to use a library called&nbsp;<a href="https://github.com/Ashung/svg2vectordrawable" target="_blank" rel="noreferrer noopener"><strong>svg2vectordrawable</strong></a>. Not only it is actively maintained (at least, better than the others we found) but it’s also more complete.</p>
+
+
+
+<p>The fact is that VectorDrawable is not in feature parity with SVG: some of the advanced features of SVG (e.g. radial gradients, complex masks, etc.) are&nbsp;<a href="https://developer.android.com/studio/write/vector-asset-studio#apilevel" target="_blank" rel="noreferrer noopener">not supported</a>, and some of them have gained support only recently (with Android API 24 and higher). One downside of this is that in Android pre-24&nbsp;<a href="https://medium.com/thoughts-overflow/the-mystery-of-the-disappearing-holes-a-gripping-tale-of-using-svg-in-android-442f6035a452" target="_blank" rel="noreferrer noopener">the “even-odd” fill-rule is not supported</a>. But at Badoo we need to support Android 5 and above. That’s why, as explained above, for Android we need to convert every path in the Sketch files to “non-zero” fill.</p>
+
+
+
+<p>Potentially, the designers could do this manually:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="914" height="534" src="/wp-content/uploads/2019/11/sketch-non-zero.png" alt="" class="wp-image-2598" srcset="/wp-content/uploads/2019/11/sketch-non-zero.png 914w, /wp-content/uploads/2019/11/sketch-non-zero-800x467.png 800w, /wp-content/uploads/2019/11/sketch-non-zero-768x449.png 768w" sizes="auto, (max-width: 914px) 100vw, 914px" /></figure>
+
+
+
+<p>but this might be easily get overlooked, and so be prone to human-error.</p>
+
+
+
+<p>For this reason, we have added an extra step in our process for Android, where we automatically convert all the paths to&nbsp;<em>non-zero</em>&nbsp;in the Sketch JSON. This is so that when we export the icons to SVG, they are already in this format, and each VectorDrawable generated is also compatible with Android 5 devices.</p>
+
+
+
+<p>The final&nbsp;<em>badge-feature-like.xml</em>&nbsp;file in this case looks like this:</p>
+
+
+
+<pre class="wp-block-preformatted">&lt;!-- This file is generated automatically - DO NOT EDIT --&gt;<br>&lt;vector xmlns:android="<a href="http://schemas.android.com/apk/res/android" target="_blank" rel="noreferrer noopener">http://schemas.android.com/apk/res/android</a>"<br>  android:width="128dp"<br>  android:height="128dp"<br>  android:viewportWidth="128"<br>  android:viewportHeight="128"&gt;<br>  &lt;path<br>    <strong>android:fillColor="?color_feature_liked_you"</strong><br>    android:pathData="M64 1a63 63 0 1 0 0 126A63 63 0 1 0 64 1z"<br>  /&gt;<br>  &lt;path<br>    android:fillColor="#FFFFFF"<br>    android:pathData="M80.406 ..."<br>  /&gt;<br>&lt;/vector&gt;</pre>
+
+
+
+<p>As you can see, also in the VectorDrawable files we inject variable names for the&nbsp;<em>fill</em>&nbsp;colours, which are associated to the design tokens via custom styles in the Android applications.</p>
+
+
+
+<p>This is what VectorDrawable looks like once imported in Android Studio:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="463" src="/wp-content/uploads/2019/11/android-studio-1024x463.png" alt="" class="wp-image-2599" srcset="/wp-content/uploads/2019/11/android-studio-1024x463.png 1024w, /wp-content/uploads/2019/11/android-studio-800x362.png 800w, /wp-content/uploads/2019/11/android-studio-768x347.png 768w, /wp-content/uploads/2019/11/android-studio.png 1270w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption>An example of a VectorDrawable icon imported into Android Studio</figcaption></figure>
+
+
+
+<p>One thing to note in this case: Android Studio has a very strict and prescriptive way of organising the assets: no nested folder and all lowercase names! This meant we had to come up with a slightly different format for their icons names: in the case of an asset under experiment, its name will be something like&nbsp;<em>ic_icon-name__experiment-name__variant-name</em>.</p>
+
+
+
+<h5 class="wp-block-heading" id="4b21">JSON dictionary as assets library</h5>
+
+
+
+<p>Once the asset files are saved in their final format, the last thing that remains to be done is to save all the meta-information collected during the build process, and store it in a “dictionary”, so that it can be made available later when the assets are imported and consumed by the codebase of the different platforms.</p>
+
+
+
+<p>Having extracted the&nbsp;<strong>flat list of icons</strong>&nbsp;from the&nbsp;<em>assetsMetadata</em>&nbsp;object, we loop over it and for each item we check:</p>
+
+
+
+<ul class="wp-block-list"><li>if it’s a&nbsp;<strong>normal</strong>&nbsp;asset (eg.&nbsp;<em>tabbar-livestream</em>), and if it is, we just keep it;</li><li>if it’s a&nbsp;<strong>variant</strong>&nbsp;in an AB test (eg.&nbsp;<em>experiment/tabbar-livestream[variant]</em>) we associate its name, path, AB test and variant names, to the property&nbsp;<em>abtests</em>&nbsp;of the “base” asset (in this case,&nbsp;<em>tabbar-livestream</em>), and then we remove the variant entry from the list/object (only the “base” counts);</li><li>if it’s a&nbsp;<strong>“ghost” variant</strong>, we delete the file, and then remove the entry from the list/object.</li></ul>
+
+
+
+<p>Once the loop is completed, the&nbsp;<strong>dictionary</strong>&nbsp;will contain the list of all and only the&nbsp;<strong>“base” icons</strong>&nbsp;(and their AB tests, if under experiment). For each one of these it will contain its&nbsp;<strong>name</strong>,&nbsp;<strong>size</strong>,&nbsp;<strong>path</strong>&nbsp;and, in case an icon is under AB testing, the information on the&nbsp;<strong>different variants</strong>&nbsp;of the asset.</p>
+
+
+
+<p>This dictionary is then saved in JSON format in the destination folder for the&nbsp;<em>brand</em>&nbsp;and&nbsp;<em>platform</em>. Here, for example, is the&nbsp;<em>assets.json</em>&nbsp;file generated for the “Blendr” application on “mobile web”:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "platform": "mw",<br>  "brand": "blendr",<br>  "<strong>assets</strong>": {<br>      "<strong>badge-feature-like</strong>": {<br>      "assetname": "badge-feature-like",<br>      "path": "assets/badge-feature-like.jsx",<br>      "width": 64,<br>      "height": 64,<br>      "source": "icons_common"<br>    },<br>    "<strong>navigation-bar-edit</strong>": {<br>      "assetname": "navigation-bar-edit",<br>      "path": "assets/navigation-bar-edit.jsx",<br>      "width": 48,<br>      "height": 48,<br>      "source": "icons_common"<br>    },<br>    "<strong>tabbar-livestream</strong>": {<br>      "assetname": "tabbar-livestream",<br>      "path": "assets/tabbar-livestream.jsx",<br>      "width": 128,<br>      "height": 128,<br>      "source": "icons_blendr",<br>      "<strong>abtest</strong>": {<br>        "<strong>this__is_an_experiment</strong>": {<br>          "<strong>control</strong>": "assets/this__is_an_experiment/tabbar-livestream__control.jsx",<br>          "<strong>variant1</strong>": "assets/this__is_an_experiment/tabbar-livestream__variant1.jsx",<br>          "<strong>variant2</strong>": "assets/this__is_an_experiment/tabbar-livestream__variant2.jsx"<br>        },<br>        "<strong>a_second-experiment</strong>": {<br>          "control": "assets/a_second-experiment/tabbar-livestream__control.jsx",<br>          "variantA": "assets/a_second-experiment/tabbar-livestream__variantA.jsx"<br>        }<br>      }<br>    },<br>    ...<br>  }<br>}</pre>
+
+
+
+<p>The very last step is to compress all the&nbsp;<em>assets</em>&nbsp;folders in .<em>zip</em>&nbsp;files, so that they can be downloaded more easily.</p>
+
+
+
+<h5 class="wp-block-heading" id="c644">The final result</h5>
+
+
+
+<p>The process described above — from the initial cloning and manipulation of the Sketch files, to the export (and conversion) of the assets in the format desired for every supported platform, to the storage of the collected meta-information in an asset library — is repeated for every brand declared in the build script.</p>
+
+
+
+<p>Below is a screenshot of what the structure of the&nbsp;<em>src</em>&nbsp;and&nbsp;<em>dist</em>&nbsp;folders look like, once the build process is completed:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="768" src="/wp-content/uploads/2019/11/folders-structure-final-1024x768.png" alt="" class="wp-image-2600" srcset="/wp-content/uploads/2019/11/folders-structure-final-1024x768.png 1024w, /wp-content/uploads/2019/11/folders-structure-final-800x600.png 800w, /wp-content/uploads/2019/11/folders-structure-final-768x576.png 768w, /wp-content/uploads/2019/11/folders-structure-final-1536x1152.png 1536w, /wp-content/uploads/2019/11/folders-structure-final.png 1600w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption>Structure of ”<em>src”</em>&nbsp;and ”<em>dist”</em>&nbsp;folders after completion of the build process.</figcaption></figure>
+
+
+
+<p>At this point, with one simple command it’s possible to upload all the resources (JSON files, ZIP files and assets files) to a remote repository, and make them available for all the various platforms, to download and consume in their codebases.</p>
+
+
+
+<p><em>(How the actual platforms retrieve and process the assets — via custom scripts that were built ad-hoc for this purpose — is beyond the scope of this article. But this will be probably covered very soon in other dedicated blog posts, by one of the other developers who worked with me on this project).</em></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h4 class="wp-block-heading" id="ec03">Conclusions (and lessons learned along the way)</h4>
+
+
+
+<p>I have always loved&nbsp;<a href="http://sketchapp.com/" target="_blank" rel="noreferrer noopener">Sketch</a>. For years it’s been the “de-facto” tool of choice for web and app design (and development). So I was very interested and curious to explore possible integrations like&nbsp;<a href="https://github.com/brainly/html-sketchapp" target="_blank" rel="noreferrer noopener">html-sketchapp</a>&nbsp;or similar tools, hat we could use in our workflows and pipelines.</p>
+
+
+
+<p>This (ideal) flow has always been the&nbsp;<a target="_blank" rel="noreferrer noopener" href="https://medium.com/bumble-tech/from-zero-to-cosmos-part-2-97929e13f839">holy grail for me</a>&nbsp;(<a href="https://medium.com/seek-blog/a-unified-styling-language-d0c208de2660" target="_blank" rel="noreferrer noopener">and many others</a>):</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="585" src="/wp-content/uploads/2019/11/design-holy-flow-1024x585.png" alt="" class="wp-image-2601" srcset="/wp-content/uploads/2019/11/design-holy-flow-1024x585.png 1024w, /wp-content/uploads/2019/11/design-holy-flow-800x457.png 800w, /wp-content/uploads/2019/11/design-holy-flow-768x439.png 768w, /wp-content/uploads/2019/11/design-holy-flow.png 1400w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption>Sketch as a design tool can be imagined as a possible “target” of the codebase.</figcaption></figure>
+
+
+
+<p>But I have to admit that I recently started to wonder if Sketch was still the right tool, especially in the context of a Design System. So, I started exploring new tools like&nbsp;<a href="http://figma.com/" target="_blank" rel="noreferrer noopener">Figma</a>, with its open APIs, and&nbsp;<a href="http://framer.com/" target="_blank" rel="noreferrer noopener">Framer X</a>, with its incredible integration with React, because I was not seeing equivalent efforts from Sketch to move towards the integration with code (whatever code it is).</p>
+
+
+
+<p>Well, this project changed my mind. Not completely, but definitely a lot.</p>
+
+
+
+<p>Maybe Sketch is not officially exposing its APIs, but certainly&nbsp;<strong>the way in which they have built the internal structure of their files is a sort of “unofficial” API</strong>. They could have used cryptic names, or obfuscated the keys in the JSON objects; instead they have opted for a clear, easy-to-read, human-readable, semantic naming convention. I can’t think this is merely accidental.</p>
+
+
+
+<p>The fact that Sketch files can be manipulated has opened my mind a wide range of possible future developments and improvements. From plugins for validating the naming, styling and structure of the layers for the icons, to possible integrations with our wiki and our design system documentation (in both directions), through the creation of Node apps hosted in&nbsp;<a href="https://electronjs.org/" target="_blank" rel="noreferrer noopener">Electron</a>&nbsp;or&nbsp;<a href="https://github.com/GoogleChromeLabs/carlo/" target="_blank" rel="noreferrer noopener">Carlo</a>&nbsp;to facilitate many of the repetitive tasks that the designers have to undertake.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>One unexpected bonus of this project (at least, for me) is that now the Sketch files with the “Cosmos icons” have become a “<strong>source of truth</strong>”, similarly to what happened with the&nbsp;<a target="_blank" rel="noreferrer noopener" href="https://medium.com/bumble-tech/from-zero-to-cosmos-part-1-2d080fe35bf2">Cosmos design system</a>. If an icon is not there, it doesn’t exist in the codebase (or better, it shouldn’t exist: but at least we know it’s an exception). I know it semss kind of obvious now, but it wasn’t before, at least for me.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>What started as an MVP project, soon became a deep-dive (literally) into the internals of Sketch files, with the realisation that these can be manipulated. We don’t know yet where all of this will lead to, but so far it’s been a success. Designers, developers, PMs, and stakeholders, all agree that this is going to save a lot of manual work for everyone, and prevent a lot of potential errors. But it also will open the doors to uses of the icons that have been impossible until now.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>One last thing: what I’ve described in this long post is a pipeline that we have built here to solve&nbsp;<em>our</em>&nbsp;particular problems, and so it’s necessarily super-customised for&nbsp;<em>our</em>&nbsp;context. Bear in mind that it may not suit&nbsp;<em>your</em>&nbsp;business needs or be appropriate for&nbsp;<em>your</em>&nbsp;context.</p>
+
+
+
+<p>But what is important to me, and what I wanted to share, is that&nbsp;<strong>it can be done</strong>. Maybe in different ways, with different approaches and different output formats, maybe involving less complexity (i.e: you may not need the multi-branding and the AB testing). But now&nbsp;<strong>you can automate the workflow</strong>&nbsp;involved in delivering your icons with a custom Node.js script and Sketch.</p>
+
+
+
+<p>Find your own way of doing it. It’s fun (and relatively easy).</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h4 class="wp-block-heading" id="fb8d">Credits</h4>
+
+
+
+<p>This huge project was developed in collaboration with&nbsp;<a rel="noreferrer noopener" href="https://twitter.com/NikhilVerma" target="_blank"><strong>Nikhil Verma</strong></a>&nbsp;(Mobile Web), who created the first version of the build script, and&nbsp;<a rel="noreferrer noopener" href="https://twitter.com/rudoj_artem" target="_blank"><strong>Artem Rudoi</strong></a>&nbsp;(Android) and&nbsp;<a rel="noreferrer noopener" href="https://twitter.com/leonspok" target="_blank"><strong>Igor Savelev</strong></a>&nbsp;(iOS), who developed the scripts that import and consume the assets in their respective native platforms. Thank you, folks, it was a blast working with you on this project and watch it come to life. &#x1f680;</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p><em>Originally published on <a href="https://medium.com/bumble-tech/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part2-8d02e8bb915a">Medium</a> on December 6, 2018</em></p>
+
+				<!-- external link -->
+				
+			</div>
+	
+		</section>
+				
+		<aside>
+	
+			<!-- abstract -->
+						<h6>In short</h6>
+			<p>This is the second part of a post about the creation of a pipeline that can take a Sketch file and export all the icons included in the file, in different formats, for different platforms, with the possibility of AB testing each icon.</p>
+			
+			<!-- date -->
+			<p class="date"><strong>Date:</strong> <time datetime="2018-12-06T11:10:00+00:00">December 6, 2018</time></p>
+
+			<!-- tags -->
+						<p class="tags"><strong>Tags:</strong> <a href="/tags/design-system/" rel="tag">Design System</a></p>
+			
+
+		</aside>
+		
+		<div class="goto">
+			<a class="goto_index" href="/">Go to blog index</a>
+			<span class="goto_prevnext">
+				<a href="/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-1/" rel="prev">Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #1</a>				<a href="/2019/01/new-years-non-resolution-for-2019/" rel="next">New Year‘s (non) Resolution for 2019</a>			</span>
+		</div>
+
+	
+</article>
+
+	
+	
+</body>
+</html>

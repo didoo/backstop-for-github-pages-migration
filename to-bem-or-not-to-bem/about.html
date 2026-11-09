@@ -1,0 +1,34 @@
+<html><head><meta charset="utf-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>To BEM or not to BEM</title><meta name="description" content="a series of interviews on BEM methodology"><meta name="author" content="Cristiano Rastelli"><link rel="stylesheet" href="css/main.min.css"></head><body><header><div class="header__wrapper"><a class="header__logo" href="./">to__bem or not__to--bem</a> <span class="header__caption">a series of interviews on BEM methodology</span> <a class="header__toggle js-overlay-toggle"><svg viewBox="0 0 40 40"><rect x="0" y="8" width="40" height="4"></rect><rect x="0" y="18" width="40" height="4"></rect><rect x="0" y="28" width="40" height="4"></rect></svg> <span>MENU</span></a></div></header><nav class="navigation"><a class="navigation__toggle js-overlay-toggle"><svg viewBox="0 0 40 40"><rect x="4" y="18" width="32" height="4" transform="rotate(-45 20 20)"></rect><rect x="4" y="18" width="32" height="4" transform="rotate(45 20 20)"></rect></svg> <span>CLOSE</span></a><ul class="navigation__menu"><li class="navigation__menu-item"><a href="./">interviews</a></li><li class="navigation__menu-divider"></li><li class="navigation__menu-item"><a href="about.html">about</a></li><li class="navigation__menu-item"><a href="credits.html">credits</a></li><li class="navigation__menu-item"><a href="subscribe.html">subscribe</a></li></ul></nav><main class="more"><section class="more__section"><h2 class="more__title">about this project</h2><p>“To BEM or not to BEM” is a series of (possibly) ten interviews to ten different people that have used <a href="https://en.bem.info/methodology/">the BEM methodology</a> on large CSS projects (on "real world" websites and applications, not simply "hello world" examples) to gather their feedback and opinions, to try to understand their learnings and experiences.</p><p>It’s not about the methodology itself - you can find plenty of tutorials, talks and posts about it - but it wants to be a way of getting insights on what works well with BEM and what can go wrong, straight from the voices of the people that actually use it.</p><p>It’s a side project I have decided to take on one evening, while I was reading <a href="https://medium.com/@pistenprinz/rebuilding-an-aircraft-on-the-fly-a-pattern-library-integration-at-trivago-b2fd6954a88e#.a2qlv5rl1">a post on Medium</a> and I was struck by this statement: &#x201C;While our CSS guidelines improved a lot with BEM and OOCSS we feared that not having the appropriate structure in place could be a challenge especially when it comes to rolling out the CSS to different applications. [...] In the meantime, to fight the CSS structure problem we found that ITCSS is the way to go.&#x201D;</p><p>I have mixed opinions on BEM - on one side I totally understand the reasons to adopt it, on the other side I think that (if not used correctly) the remedy may be worse than the disease. So reading about someone else’s experience made me extremely curious, and I started to wonder how many other people could have interesting experiences with BEM to share, how much I could learn from them, and maybe – finally – decide if embrace BEM or simply bear with it.</p><p>So this project is essentially an attempt to give an answer to a question that has haunted me for a long time: to BEM or not to BEM?</p><p><a href="/about/">Cristiano Rastelli</a></p></section></main><footer><div class="footer__wrapper"><span class="footer__meta">Made with love &amp; fun by <a href="/about/">Cristiano Rastelli</a></span></div></footer><script type="text/javascript">WebFontConfig = {
+            google: { families: [ 'Lekton:400,700:latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();</script><script type="text/javascript">(function() {
+            var togglers = document.querySelectorAll('.js-overlay-toggle'),
+                menuitems = document.querySelectorAll('.navigation__menu a');
+
+            // handle the overlay open/close togglers
+            for(var i=0; i<togglers.length; i++) {
+                togglers[i].addEventListener('click', function() {
+                    document.body.classList.toggle('overlay-is-open');
+                });
+            }
+
+            // defer the navigation so that the overlay can close before actually navigating away
+            for(var j=0; j<menuitems.length; j++) {
+                menuitems[j].addEventListener('click', function(e) {
+                    var url = this.getAttribute('href');
+                    document.body.classList.remove('overlay-is-open');
+                    console.log(this,url);
+                    setTimeout(function(){
+                        window.location.href = url;
+                        // window.location.reload(true);
+                    }, 500);
+                });
+            }
+        })();</script></body></html>

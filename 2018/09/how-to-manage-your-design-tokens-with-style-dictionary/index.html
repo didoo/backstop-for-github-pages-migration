@@ -1,0 +1,1210 @@
+
+<!DOCTYPE html>
+<html lang="en-US" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+
+	<!-- [META TAGS] -->
+	<meta charset="UTF-8" />
+
+	<!-- [GENERAL] -->
+	<title>How to manage your Design Tokens with Style Dictionary   – Didoo</title>
+
+	<!-- [MOBILE] -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- [FILE CSS] -->
+	<link rel="stylesheet" href="/wp-content/themes/mithosis/media/css/style.css" />
+
+	<!-- [FILE JS] -->
+	<script src="/wp-content/themes/mithosis/script/js/jquery.js"></script>
+	<script src="/wp-content/themes/mithosis/script/js/jquery.fitvids.js"></script>
+	<script src="/wp-content/themes/mithosis/script/js/interaction.js"></script>
+
+	<!-- [SEARCH ENGINES] -->
+	<meta name="robots" content="all" />
+
+	<!-- [ICONS] -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<!-- [WP STUFF] -->
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	
+	<!-- [RSS FEEDS] -->
+			
+	<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.didoo.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.11"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='/wp-includes/css/dist/block-library/style.min.css?ver=6.7.11' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='taxopress-frontend-css-css' href='/wp-content/plugins/simple-tags/assets/frontend/css/frontend.css?ver=3.27.0' type='text/css' media='all' />
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="/wp-content/plugins/simple-tags/assets/frontend/js/frontend.js?ver=3.27.0" id="taxopress-frontend-js-js"></script>
+<link rel="canonical" href="https://www.didoo.net/2018/09/how-to-manage-your-design-tokens-with-style-dictionary/" />
+
+	<!--wp code prettify-->
+<!-- START - Open Graph and Twitter Card Tags 3.3.3 -->
+ <!-- Facebook Open Graph -->
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Didoo"/>
+  <meta property="og:title" content="How to manage your Design Tokens with Style Dictionary"/>
+  <meta property="og:url" content="https://www.didoo.net/2018/09/how-to-manage-your-design-tokens-with-style-dictionary/"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Recently I have come across a tool, called Style Dictionary, developed by Danny Banks at Amazon, that allows you to manage design tokens (or “style properties”) for a design system. I’ve used it to replace the existing tool that we used to process the design tokens for our Cosmos design system. I’ve"/>
+  <meta property="og:image" content="https://www.didoo.net/wp-content/uploads/2019/11/bauhaus1.jpg"/>
+  <meta property="og:image:url" content="https://www.didoo.net/wp-content/uploads/2019/11/bauhaus1.jpg"/>
+  <meta property="article:published_time" content="2018-09-17T10:39:00+01:00"/>
+  <meta property="article:modified_time" content="2020-10-23T20:35:56+01:00" />
+  <meta property="og:updated_time" content="2020-10-23T20:35:56+01:00" />
+  <meta property="article:section" content="Design"/>
+  <meta property="article:section" content="HTML, CSS &amp; JS"/>
+  <meta property="article:author" content="https://www.facebook.com/cristianorastelli"/>
+ <!-- Google+ / Schema.org -->
+  <meta itemprop="name" content="How to manage your Design Tokens with Style Dictionary"/>
+  <meta itemprop="headline" content="How to manage your Design Tokens with Style Dictionary"/>
+  <meta itemprop="description" content="Recently I have come across a tool, called Style Dictionary, developed by Danny Banks at Amazon, that allows you to manage design tokens (or “style properties”) for a design system. I’ve used it to replace the existing tool that we used to process the design tokens for our Cosmos design system. I’ve"/>
+  <meta itemprop="image" content="https://www.didoo.net/wp-content/uploads/2019/11/bauhaus1.jpg"/>
+  <meta itemprop="datePublished" content="2018-09-17"/>
+  <meta itemprop="dateModified" content="2020-10-23T20:35:56+01:00" />
+  <meta itemprop="author" content="Cristiano Rastelli"/>
+  <!--<meta itemprop="publisher" content="Didoo"/>--> <!-- To solve: The attribute publisher.itemtype has an invalid value -->
+ <!-- Twitter Cards -->
+  <meta name="twitter:title" content="How to manage your Design Tokens with Style Dictionary"/>
+  <meta name="twitter:url" content="https://www.didoo.net/2018/09/how-to-manage-your-design-tokens-with-style-dictionary/"/>
+  <meta name="twitter:description" content="Recently I have come across a tool, called Style Dictionary, developed by Danny Banks at Amazon, that allows you to manage design tokens (or “style properties”) for a design system. I’ve used it to replace the existing tool that we used to process the design tokens for our Cosmos design system. I’ve"/>
+  <meta name="twitter:image" content="https://www.didoo.net/wp-content/uploads/2019/11/bauhaus1.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:creator" content="@https://twitter.com/areaweb"/>
+  <meta name="twitter:site" content="@areaweb"/>
+ <!-- SEO -->
+ <!-- Misc. tags -->
+ <!-- is_singular -->
+<!-- END - Open Graph and Twitter Card Tags 3.3.3 -->
+	
+
+</head>
+
+<body id="pagePost" class="post-template-default single single-post postid-2558 single-format-standard">
+
+	<header>
+		<div>
+
+			<!-- LOGO -->
+			<a href="/" rel="home">Didoo</a>
+
+			<!-- MENU -->
+			<nav>
+				<div class="menu-header-menu-container"><ul id="menu-header-menu" class="menu"><li id="menu-item-1047" class="blog menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1047"><a href="/">Blog</a></li>
+<li id="menu-item-1049" class="folio menu-item menu-item-type-custom menu-item-object-custom menu-item-1049"><a href="http://folio.didoo.net">Portfolio</a></li>
+<li id="menu-item-1048" class="about menu-item menu-item-type-post_type menu-item-object-page menu-item-1048"><a href="/about/">About</a></li>
+</ul></div>			</nav>
+
+		</div>
+	</header>
+<article>
+
+	
+		<section>
+	
+			<!-- post titles -->
+			<div class="hgroup">
+			<h1>How to manage your Design Tokens with Style Dictionary</h1>
+						</div>
+	
+			<!-- featured image  -->
+							<img width="800" height="450" src="/wp-content/uploads/2019/11/bauhaus1-800x450.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" fetchpriority="high" srcset="/wp-content/uploads/2019/11/bauhaus1-800x450.jpg 800w, /wp-content/uploads/2019/11/bauhaus1-1024x576.jpg 1024w, /wp-content/uploads/2019/11/bauhaus1-768x432.jpg 768w, /wp-content/uploads/2019/11/bauhaus1.jpg 1440w" sizes="(max-width: 800px) 100vw, 800px" />				
+			<!-- post content/excerpt -->
+			<div class="wysiwyg content">
+
+				
+<p>Recently I have come across a tool, called&nbsp;<a href="https://amzn.github.io/style-dictionary/#/" target="_blank" rel="noreferrer noopener"><strong>Style Dictionary</strong></a>, developed by&nbsp;<a href="https://twitter.com/dbanksDesign" target="_blank" rel="noreferrer noopener"><strong>Danny Banks</strong></a>&nbsp;at Amazon, that allows you to manage design tokens (or “style properties”) for a design system. I’ve used it to replace the existing tool that we used to process the design tokens for our&nbsp;<a href="https://medium.com/bumble-tech/from-zero-to-cosmos-part-1-2d080fe35bf2" target="_blank" rel="noreferrer noopener">Cosmos design system</a>. I’ve found the task very interesting, and I’ve decided to document it, so that other people may benefit from what I’ve learned during the process.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p><strong><em>Notice</em></strong><em>: I’ve tried to be as comprehensive as possible, which means&nbsp;</em><strong><em>this blog post is extremely long</em></strong><em>. I know, I know…&nbsp;</em>¯\_(ツ)_/¯.</p>
+
+
+
+<figure class="wp-block-embed aligncenter is-type-photo is-provider-giphy"><div class="wp-block-embed__wrapper">
+https://giphy.com/gifs/filmeditor-wow-shocked-l1IXWwZrTv36AlI52
+</div><figcaption>A reader, looking at the “24 min read” at the top of this page.</figcaption></figure>
+
+
+
+<p><em>If you just want to&nbsp;</em><strong><em>look directly at the code</em></strong><em>, I have created a GitHub repo with a configuration and a setup similar to what we’ve used in our project:</em></p>
+
+
+
+<p class="has-text-align-center"><strong>&#x27a1;&#xfe0f;&nbsp;</strong><a href="https://github.com/didoo/style-dictionary-demo" target="_blank" rel="noreferrer noopener"><strong>https://github.com/didoo/style-dictionary-demo</strong></a><strong>&nbsp;&#x2b05;&#xfe0f;</strong></p>
+
+
+
+<p><em>Go there&nbsp;</em><em>and</em><em>&nbsp;look at the code, it should be quite straightforward. If you want, clone the project and use it as a starting point (but keep in mind that is quite opinionated, and may not suit your particular context and needs).</em></p>
+
+
+
+<p><em>If instead you want to&nbsp;</em><strong><em>understand a little bit more about Style Dictionary</em></strong><em>&nbsp;and how to configure it, and also see what were the technical reasons that made me adopt this tool, the choices I made and the decisions I took while introducing it in our design system,&nbsp;</em><strong><em>then please read on</em></strong><em>.</em></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p><em>Before beginning, one disclaimer: my experience with Style Dictionary is limited to the setup and customisation of design tokens within our design system. For a more detailed explanation of what it can do, its features and APIs, its advanced capabilities, please refer to the&nbsp;</em><a href="https://amzn.github.io/style-dictionary/#/README" target="_blank" rel="noreferrer noopener"><em>official documentation</em></a><em>. Also, all the credits for this impressive project go to&nbsp;</em><a href="https://github.com/amzn/style-dictionary/graphs/contributors" target="_blank" rel="noreferrer noopener"><em>its contributors</em></a><em>&nbsp;and in particular to&nbsp;</em><a href="https://twitter.com/dbanksDesign" target="_blank" rel="noreferrer noopener"><em>Danny Banks</em></a><em>.</em></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h4 class="wp-block-heading" id="239f">About Design Tokens</h4>
+
+
+
+<p>In a design system, people often use special entities called “design tokens” to store their “design decisions”. These entities are in the shape of&nbsp;<em>key/value</em>&nbsp;pairs, saved in specific file formats (usually JSON or YAML). These files are later used as input files, processed and transformed to generate different output files, with different formats, to be included and consumed by other projects and codebases. (If you want to know more about design tokens, I suggest to read&nbsp;<a href="https://speakerdeck.com/jina/design-tokens-in-design-systems" target="_blank" rel="noreferrer noopener">here</a>,&nbsp;<a target="_blank" rel="noreferrer noopener" href="https://medium.com/eightshapes-llc/tokens-in-design-systems-25dd82d58421">here</a>&nbsp;and&nbsp;<a target="_blank" rel="noreferrer noopener" href="https://medium.com/salesforce-ux/living-design-system-3ab1f2280ef7">here</a>).</p>
+
+
+
+<p>This, for example, is how we use some design tokens as Sass variables in the declaration of the styles for the&nbsp;<code>&lt;Button/&gt;</code>&nbsp;component:</p>
+
+
+
+<pre class="wp-block-preformatted">.<strong>button</strong> {<br>    position: relative;<br>    display: block;<br>    width: 100%;<br>    min-height: <strong>$token-button-height</strong>;<br>    margin: 0;<br>    padding: <strong>$token-spacing-sm</strong> <strong>$token-spacing-xxlg</strong>;<br>    border-radius: <strong>$token-button-border-radius</strong>;<br>    text-align: center;<br>}<br><br>// variants<br><br>.<strong>button--stroke</strong> {<br>    border: <strong>$token-button-border-width</strong> solid currentColor;<br>    background: transparent;<br>}<br><br>.<strong>button--monochrome</strong> {<br>    border: <strong>$token-button-border-width</strong> solid <strong>$token-colour-gray</strong>;<br>    background: #fff;<br>    color: <strong>$token-colour-black</strong>;<br>}<br><br>// and other variants here...</pre>
+
+
+
+<p>These properties are also exposed in our style guide so that they can be part of our documentation:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="1195" src="/wp-content/uploads/2019/11/tokens-documentation1-1024x1195.png" alt="" class="wp-image-2559" srcset="/wp-content/uploads/2019/11/tokens-documentation1-1024x1195.png 1024w, /wp-content/uploads/2019/11/tokens-documentation1-800x934.png 800w, /wp-content/uploads/2019/11/tokens-documentation1-768x896.png 768w, /wp-content/uploads/2019/11/tokens-documentation1.png 1316w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>A portion of the “Tokens” page in our Cosmos design system</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading" id="07ac">Migrating from Theo</h4>
+
+
+
+<p>When one year ago we introduced the design tokens in our design system, at that time the&nbsp;<em>state of the art</em>&nbsp;for design token management was&nbsp;<a href="https://github.com/salesforce-ux/theo" target="_blank" rel="noreferrer noopener">Theo</a>, a tool developed by the design system team at Salesforce — mainly&nbsp;<a href="https://github.com/aputinski" target="_blank" rel="noreferrer noopener">Adam Putinski</a>&nbsp;and&nbsp;<a href="https://twitter.com/kaelig" target="_blank" rel="noreferrer noopener">Kaelig Deloumeau-Prigent</a>&nbsp;(now at Shopify) — to manage their&nbsp;<a href="https://www.lightningdesignsystem.com/design-tokens/" target="_blank" rel="noreferrer noopener">impressively large number of design tokens</a>&nbsp;in the&nbsp;<a href="https://www.lightningdesignsystem.com/" target="_blank" rel="noreferrer noopener">Lightning Design System</a>.</p>
+
+
+
+<p>At that time, the available version was Theo5, and this is how our design tokens declarations looked like (until a few weeks ago):</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "global": {<br>    "type": "token",<br>    "category": "brick"<br>  },<br>  "aliases": {<br>    "TOKEN_BRICK_SIZE_SM": {<br>      "value": "70px"<br>    },<br>    "TOKEN_BRICK_SIZE_MD": {<br>      "value": "100px"<br>    },<br>    "TOKEN_BRICK_SIZE_LG": {<br>      "value": "120px"<br>    }<br>  },<br>  "props": {<br>    "TOKEN_BRICK_SIZE_XXSM": {<br>      "value": "36px"<br>    },<br>    "TOKEN_BRICK_SIZE_SM": {<br>      "value": "{!TOKEN_BRICK_SIZE_SM}"<br>    },<br>    "TOKEN_BRICK_SIZE_MD": {<br>      "value": "{!TOKEN_BRICK_SIZE_MD}"<br>    },<br>    "TOKEN_BRICK_SIZE_LG": {<br>      "value": "{!TOKEN_BRICK_SIZE_LG}"<br>    },<br>    "TOKEN_BRICK_SIZE_XLG": {<br>      "value": "150px"<br>    }<br>  }<br>}</pre>
+
+
+
+<p>Since then, Theo has evolved a lot (now we are at Theo8!) and the way you declare the token values has quite changed, but what remains a pain point (at least, for me) is the fact that in order to reference a value of a token in another token, you have to declare it before using a specific&nbsp;<em>alias</em>&nbsp;definition; and, if this declaration is in another file, you have to import the file where it’s used (which also means that, when declaring the files to import/process, the order of the declarations matters).</p>
+
+
+
+<p>This way to define “aliases” leads to a lot of repetitions (see above, where I had to declare twice&nbsp;<code>TOKEN_BRICK_SIZE_SM/MD/LG</code>, as an&nbsp;<em>alias</em>&nbsp;and as a&nbsp;<em>prop</em>, or&nbsp;<a href="https://github.com/Shopify/polaris-tokens/blob/master/tokens/colors.yml" target="_blank" rel="noreferrer noopener">here</a>&nbsp;for example). Besides, in this way, the resulting organisation of the design tokens, and the files where they are stored, tends to be very prescriptive (see for example&nbsp;<a href="https://github.com/mineral-ui/mineral-ui/tree/master/packages/mineral-ui-tokens/tokens" target="_blank" rel="noreferrer noopener">here</a>&nbsp;or&nbsp;<a href="https://github.com/infor-design/design-system/tree/master/design-tokens" target="_blank" rel="noreferrer noopener">here</a>) and rigid when you need to refactor or re-arrange the design tokens.</p>
+
+
+
+<p>I also made some tests, to associate&nbsp;custom&nbsp;<em>meta-data</em>&nbsp;to the tokens (to be used as documentation), but I couldn’t find a way to have this information exposed in the generated files. So I had to give up and leave the documentation for our tokens out of our style guide.</p>
+
+
+
+<p>Don’t get me wrong: Theo is a&nbsp;<strong>great</strong>&nbsp;tool, and the issues I have mentioned above are small details, just a matter of personal preferences.&nbsp;<em>(So don’t make your choices based on my impression.&nbsp;</em><em>Always evaluate a tool for what it can do&nbsp;</em><strong><em>for you</em></strong><em>, how it solves your problems, in the context of your needs!</em><em>).</em></p>
+
+
+
+<p>Anyway, since the first time I implemented our design system’s tokens with Theo, I felt that our setup was OK… but not exactly what I wanted.&nbsp;There was always something I would have done slightly differently, but I couldn’t (because of these technical limitations, and because of the limits in my comprehension of the tool, probably).</p>
+
+
+
+<p>The fact remains that I was not 100% satisfied. In the back of my mind, I always had this idea of replacing Theo with a custom-built tool. But lack of time (and hesitation to invest resources in such a complex task) made me reconsider this idea, and continue to keep the existing setup.</p>
+
+
+
+<h4 class="wp-block-heading" id="89e5">First impact with Style Dictionary</h4>
+
+
+
+<p>I don’t remember exactly where I read for the first time of Style Dictionary, probably on my Twitter feed, or in some Medium blog post, or in a chat in the&nbsp;<a href="http://slack.design.systems/" target="_blank" rel="noreferrer noopener">Design Systems Slack channel</a>&nbsp;(<a href="https://medium.com/u/896b7a497a5e?source=post_page-----98c795b938aa----------------------" target="_blank" rel="noreferrer noopener">Shaun Bent</a>&nbsp;rightly made me notice that it was announced&nbsp;<a href="https://aws.amazon.com/blogs/opensource/style-dictionary-trust-design-consistency/" target="_blank" rel="noreferrer noopener">on February this year</a>, but I don’t remember that post).</p>
+
+
+
+<p>Looking at&nbsp;<a href="https://github.com/amzn/style-dictionary/graphs/contributors" target="_blank" rel="noreferrer noopener">the history of the project on GitHub</a>&nbsp;it seems they have worked on it for a long time, but I’ve never heard about it until a couple of months ago.</p>
+
+
+
+<p>I remember I quickly looked at&nbsp;<a href="https://amzn.github.io/style-dictionary/" target="_blank" rel="noreferrer noopener">the project website</a>, I understood it was somehow related with design tokens but I didn’t understand exactly how (probably because of the use of the term “<a href="https://amzn.github.io/style-dictionary/#/?id=style-properties" target="_blank" rel="noreferrer noopener">style properties</a>” in lieu of the more common “design tokens”).</p>
+
+
+
+<p>I also remember this illustration, that caught my eye:</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="413" src="/wp-content/uploads/2019/11/style-dictionary-build-process-1024x413.png" alt="" class="wp-image-2560" srcset="/wp-content/uploads/2019/11/style-dictionary-build-process-1024x413.png 1024w, /wp-content/uploads/2019/11/style-dictionary-build-process-800x323.png 800w, /wp-content/uploads/2019/11/style-dictionary-build-process-768x310.png 768w, /wp-content/uploads/2019/11/style-dictionary-build-process-1536x619.png 1536w, /wp-content/uploads/2019/11/style-dictionary-build-process.png 1679w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption>How the build process of Style Dictionary works under the hood (<a rel="noreferrer noopener" href="https://amzn.github.io/style-dictionary/#/build_process" target="_blank">source</a>)</figcaption></figure>
+
+
+
+<p>This “deep merge” of different JSON files (plus, the different compilations for different platforms) was exactly what I had in mind.</p>
+
+
+
+<p>At that time I didn’t have time to investigate, so I starred the repo and promised myself to have a look in detail later. One day that I didn’t have that much to do, I made a&nbsp;quick&nbsp;test to see how Style Dictionary was supporting this “deep merge” of properties in the tokens’ JSON files. The results were exactly what I was hoping for: if you attach any extra attributes to a JSON key/value pair in Style Dictionary, these meta-informations are seamlessly carried over in the processed files in output. Bingo!</p>
+
+
+
+<p>I created a ticket in my backlog—<code>DO-132 — Evaluate Style Dictionary for the generation of the Design Tokens</code>&nbsp;— and went on with the ordinary day-by-day components-related tasks.</p>
+
+
+
+<p>Then a couple of weeks later a tweet caught my eyes:</p>
+
+
+
+<figure class="wp-block-embed-twitter wp-block-embed is-type-rich is-provider-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true"><p lang="en" dir="ltr">Here are the slides from my talk at <a href="https://twitter.com/TheMixinSF?ref_src=twsrc%5Etfw">@TheMixinSF</a> last night: <a href="https://t.co/fAMTD5tzMu">https://t.co/fAMTD5tzMu</a> <a href="https://twitter.com/hashtag/themixin0718?src=hash&amp;ref_src=twsrc%5Etfw">#themixin0718</a></p>&mdash; Danny DarkMode (@dbanksDesign) <a href="https://twitter.com/dbanksDesign/status/1017442679750180864?ref_src=twsrc%5Etfw">July 12, 2018</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<p>I immediately looked at&nbsp;<a href="https://dbanksdesign.github.io/style-dictionary-presentation/#/" target="_blank" rel="noreferrer noopener">the slides of the presentation</a>, and fell in love with the project: I wanted absolutely to try it as soon as possible.</p>
+
+
+
+<p>At the first opportunity I had, I started to work on that ticket.&nbsp;<strong>Two days later, an entirely updated version of our design tokens system, built on Style Dictionary, was in production.</strong></p>
+
+
+
+<p>As I said above, given how simple and enjoyable it was for me to adopt Style Dictionary, I started to wonder if it was not the case to write a blog post about the experience, highlighting the reasons that made me decide to switch to it, but also what I learned during the process. So here below are my findings.</p>
+
+
+
+<h4 class="wp-block-heading" id="4a55">Initial setup of Style Dictionary</h4>
+
+
+
+<p>Compared to other tools, I found it very easy to be up and running using Style Dictionary: in less than five minutes, I was already building my new design tokens.</p>
+
+
+
+<p>My suggestion is to create a folder, where you want to store your tokens,&nbsp;<a href="https://github.com/amzn/style-dictionary#installation" target="_blank" rel="noreferrer noopener">install the package,</a>&nbsp;and then run the command:</p>
+
+
+
+<pre class="wp-block-preformatted">style-dictionary init basic</pre>
+
+
+
+<p>This will create a basic project with some example JSON files and the&nbsp;<em>config.json</em>&nbsp;file required to process the tokens and generate the different formats of files in output (see later for more details).</p>
+
+
+
+<p>In my case, I did it directly in my existing /<em>tokens</em>&nbsp;folder, because the default structure of Style Dictionary was different from the folder structure of my Theo implementation (Style Dictionary uses&nbsp;<em>properties</em>&nbsp;and&nbsp;<em>build</em>, I used&nbsp;<em>src</em>&nbsp;and&nbsp;<em>dist,&nbsp;</em>so there were no risks of conflicts). After the initial setup, I renamed my existing folders&nbsp;<em>tokens/src.old</em>&nbsp;and&nbsp;<em>tokens/dist.old</em>, and the new folders&nbsp;<em>tokens/src</em>&nbsp;and&nbsp;<em>tokens/dist</em>&nbsp;and updated the&nbsp;<em>config.json</em>&nbsp;file to reflect the new paths. In this way, I was able to continually compare the files generated with Theo and the ones generated with Style Dictionary, and see if there were differences. What I wanted to achieve was to seamlessly replace the tokens generated using Theo with the ones generated using Style Dictionary, without requiring any change in the code consuming the tokens (in our case, our Component Library in React, and our Mobile Web application).</p>
+
+
+
+<p>Now, once your project is set up, all you have to do is run the “build” command in your CLI:</p>
+
+
+
+<pre class="wp-block-preformatted">style-dictionary build</pre>
+
+
+
+<p>This will “transform” your JSON files and generate the resulting token files according to the options declared in your config file.</p>
+
+
+
+<p>Using the pre-defined&nbsp;<code>build</code>&nbsp;command in your CLI is the simplest way to process your tokens, but you can also decide to implement a custom build script if you want or need (more on this later).</p>
+
+
+
+<h4 class="wp-block-heading" id="204b">Using Style Dictionary for your own project</h4>
+
+
+
+<p>At this point, you can start to play around with your token’s JSON files (and you config file) to see the different options that you have, in term of the organisation of your style properties and generation of different output formats. If you want, you can look at the&nbsp;<a href="https://github.com/amzn/style-dictionary/blob/master/example" target="_blank" rel="noreferrer noopener"><em>examples</em></a>&nbsp;folder included in Style Dictionary’s project repository to see more complex organisations and use cases, but I suggest to start with the “basic” one to avoid getting lost in the more advanced features offered by Style Dictionary (e.g. the distribution of assets like fonts or icons as “tokens” or the generation of tokens for React Native projects).</p>
+
+
+
+<h5 class="wp-block-heading" id="cec4">Documentation</h5>
+
+
+
+<p>Style Dictionary is a very well documented project. You can use the official website available at this address:&nbsp;<a href="https://amzn.github.io/style-dictionary/#/" target="_blank" rel="noreferrer noopener">https://amzn.github.io/style-dictionary/</a>&nbsp;or you can read directly the markdown files from the GitHub repo:&nbsp;<a href="https://github.com/amzn/style-dictionary/tree/master/docs" target="_blank" rel="noreferrer noopener">https://github.com/amzn/style-dictionary/tree/master/docs</a>.</p>
+
+
+
+<p>I have found very useful — and I strongly suggest to do the same — to play and experiment with the properties’ JSONs and the config files, trying to understand how the whole system works, and in parallel to read the documentation when something is not 100% clear or obvious. Following this approach in just a few hours I’ve found myself able to customise the entire set of my design tokens and create a custom build script.</p>
+
+
+
+<h5 class="wp-block-heading" id="69e2">The ”Category &gt; Type &gt; Item” classification</h5>
+
+
+
+<p>Style Dictionary has an&nbsp;<a href="https://amzn.github.io/style-dictionary/#/package_structure?id=category-type-item" target="_blank" rel="noreferrer noopener">implicit classification of the tokens</a>:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="680" src="/wp-content/uploads/2019/11/style-dictionary-cti-1024x680.png" alt="" class="wp-image-2561" srcset="/wp-content/uploads/2019/11/style-dictionary-cti-1024x680.png 1024w, /wp-content/uploads/2019/11/style-dictionary-cti-800x531.png 800w, /wp-content/uploads/2019/11/style-dictionary-cti-768x510.png 768w, /wp-content/uploads/2019/11/style-dictionary-cti.png 1280w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>This classification is simply based on the nesting of the properties inside the JSON files. If we look at this code, for example:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>button</strong>": {<br>    "<strong>border</strong>": {<br>      "<strong>width</strong>": {<br>        "value": "1px"<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>when we process it via the&nbsp;<em>build</em>&nbsp;command the resulting JSON is this:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "button": {<br>    "border": {<br>      "width": {<br>        <strong>"name": "button-border-width",<br></strong>        "value": "1px",<br>        "original": {<br>          "value": "1px"<br>        },<br>        <strong>"attributes": {<br>          "category": "button",<br>          "type": "border",<br>          "item": "width"<br>        },</strong><br>        "path": [<br>          "button",<br>          "border",<br>          "width"<br>        ]<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>As you can see,&nbsp;the order in the nesting of the source JSON is automatically interpreted as logical tree/structure, and it’s used to build the name of the properties&nbsp;(e.g.&nbsp;<code>$button-border-width</code>&nbsp;and&nbsp;<code>BUTTON_BORDER_WIDTH</code>&nbsp;in this example) but also to associate them a set of predefined “CTI” attributes.</p>
+
+
+
+<p>While working with Style Dictionary, you will find this implicit CTI classification consistently across many helpers and functions.&nbsp;Luckily this is not something that you have to strictly follow (and this says a lot about the quality of the project and the cleverness of its authors). According to&nbsp;<a href="https://amzn.github.io/style-dictionary/#/package_structure?id=category-type-item" target="_blank" rel="noreferrer noopener">the documentation</a>&nbsp;<em>“you can organize and name your style properties however you want, there are no restrictions.”</em>.&nbsp;It’s important anyway to keep in mind this inner trait of this tool, so you can use it correctly, or work around it, if you need/want&nbsp;(that’s what I have done in my project, because I preferred to have a different taxonomy for our design tokens).</p>
+
+
+
+<h4 class="wp-block-heading" id="4990">My design tokens organisation</h4>
+
+
+
+<p><a target="_blank" rel="noreferrer noopener" href="https://medium.com/badoo-developers/from-zero-to-cosmos-part-1-2d080fe35bf2">Cosmos, our design system</a>, has been built to support different “<strong>platforms</strong>” (Mobile Web, iOS and Android) and different “<strong>brands</strong>” (our application has white-label products).</p>
+
+
+
+<p>The&nbsp;<strong>Cosmos component library</strong>, built in React, is entirely adopted by our Mobile Web application, while for the native platforms it works as a “reference” on how to break down the UI in components (for now; in the future we may consider a React Native version of the components, in which case the native platform could start to consume the Cosmos components too).</p>
+
+
+
+<p>Conversely, the&nbsp;<strong>Cosmos design tokens</strong>&nbsp;are consumed by all our platforms. For this reason, we have organised our design tokens accordingly to the way the values of the tokens are related to the different brands and platforms that we need to support. Some of them depend on the&nbsp;<em>brand</em>&nbsp;(e.g&nbsp;<code>primary</code>&nbsp;and&nbsp;<code>secondary</code>&nbsp;colors), some depend on the&nbsp;<em>platform</em>&nbsp;(e.g.&nbsp;<code>font-family</code>&nbsp;and&nbsp;<code>button-height</code>) and some are instead global, which means they have the same value for every&nbsp;<em>brand</em>&nbsp;and&nbsp;<em>platform</em>, (e.g.&nbsp;<code>color-facebook</code>&nbsp;or&nbsp;<code>spacing-small</code>).</p>
+
+
+
+<p>Here is a simplified schema of the folder structure of our JSON source files:</p>
+
+
+
+<pre class="wp-block-preformatted">├── config.json<br>├── src/<br>│   ├── <strong>brands</strong>/<br>│   │   │── <strong>brand_#1</strong>/<br>│   │   │   ├── color.json<br>│   │   │── <strong>brand_#2</strong>/<br>│   │   │   ├── color.json<br>│   │   │── <strong>brand_#3</strong>/<br>│   │   │   ├── color.json<br>│   ├── <strong>globals</strong>/<br>│   │   │── <strong>base</strong>/<br>│   │   │   ├── index.json<br>│   │   │── <strong>color</strong>/<br>│   │   │   ├── basic.json<br>│   │   │   ├── grayscale.json<br>│   │   │   ├── features.json<br>│   │   │   ├── social.json<br>│   │   │── <strong>icon</strong>/<br>│   │   │   ├── index.json<br>│   │   │── ...<br>│   │   │── <strong>spacing</strong>/<br>│   │   │   ├── index.json<br>│   │   │── <strong>typography</strong>/<br>│   │   │   ├── index.json<br>│   ├── <strong>platforms</strong>/<br>│   │   │── <strong>android</strong>/<br>│   │   │   ├── button.json<br>│   │   │   ├── ...<br>│   │   │   ├── typography.json<br>│   │   │── <strong>ios</strong>/<br>│   │   │   ├── button.json<br>│   │   │   ├── ...<br>│   │   │   ├── typography.json<br>│   │   │── <strong>mobile_web</strong>/<br>│   │   │   ├── button.json<br>│   │   │   ├── ...<br>│   │   │   ├── typography.json</pre>
+
+
+
+<p>Using this organisation, it is quite easy and obvious where to find the different tokens, where to add a new token when needed, or which files to remove if a component is removed from the library.</p>
+
+
+
+<p>When it came to the organisation of the destination/output folder, I’ve preferred a structure where it’s clear and obvious for the different “consumers” where to find the files they are interested in.</p>
+
+
+
+<p>This is the schema of the folder structure for our generated files:</p>
+
+
+
+<pre class="wp-block-preformatted">├── dist/<br>│   │── <strong>android</strong>/<br>│   │   ├── ...<br>│   │── <strong>ios</strong>/<br>│   │   ├── ...<br>│   │── <strong>mobile_web</strong>/<br>│   │   │── <strong>brand_#1</strong>/<br>│   │   │   ├── **.scss<br>│   │   │   ├── **.js<br>│   │   │   ├── **.json<br>│   │   │── <strong>brand_#2</strong>/<br>│   │   │   ├── **.scss<br>│   │   │   ├── **.js<br>│   │   │   ├── **.json<br>│   │   │── <strong>brand_#3</strong>/<br>│   │   │   ├── **.scss<br>│   │   │   ├── **.js<br>│   │   │   ├── **.json<br>│   │── <strong>style_guide</strong>/<br>│   │   ├── android_brand_#1.scss<br>│   │   ├── android_brand_#1.json<br>│   │   ├── android_brand_#2.scss<br>│   │   ├── android_brand_#2.json<br>│   │   ├── ...<br>│   │   ├── ios_brand_#1.scss<br>│   │   ├── ios_brand_#1.json<br>│   │   ├── ios_brand_#2.scss<br>│   │   ├── ios_brand_#2.json<br>│   │   ├── ...<br>│   │   ├── mobile_web_brand_#1.scss<br>│   │   ├── mobile_web_brand_#1.json<br>│   │   ├── mobile_web_brand_#2.scss<br>│   │   ├── mobile_web_brand_#2.json<br>│   │   ├── ...</pre>
+
+
+
+<p>As you can see, if I am an Android developer, I will immediately know that my tokens are stored in the&nbsp;<em>/Android</em>&nbsp;folder, and here I will find only the format I am interested in (e.g. XML files). If I am a Mobile Web developer, I will find my files under the&nbsp;<em>/Mobile_Web</em>&nbsp;folder, (SCSS, JS and JSON files, depending on what I need).</p>
+
+
+
+<p>The&nbsp;<em>/style_guide</em>&nbsp;folder instead is slightly different, because in this case the tokens are consumed by the&nbsp;<strong>Cosmos style guide</strong>, and we need to expose the token values for&nbsp;<strong>all the possible combinations</strong>&nbsp;of&nbsp;<em>platform/brand.</em>&nbsp;The user can select them in the UI, so we need to dynamically load the corresponding token values depending on the selected combination, and in this case a flat structure with all the files under a single folder is better.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="720" height="556" src="/wp-content/uploads/2019/11/cosmos-switcher.png" alt="" class="wp-image-2562"/><figcaption>In our style guide, the user can switch between different platforms and brands.</figcaption></figure>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>Now, when it comes to the actual tokens’ values declarations inside the files, I’ve decided to arrange them in alignment with the actual components they were referring to. Instead of following the suggested CTI — Category &gt; Type &gt; Item — organisation (e.g.&nbsp;<code>color &gt; background &gt; button</code>) I’ve preferred to follow a classification which is more “component-oriented”.</p>
+
+
+
+<p>I’ll give you a couple of examples.</p>
+
+
+
+<p>Let’s consider the&nbsp;<em>Input</em>&nbsp;component. This is how it looks like in our style guide:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="238" src="/wp-content/uploads/2019/11/cosmos-input-component-1024x238.png" alt="" class="wp-image-2563" srcset="/wp-content/uploads/2019/11/cosmos-input-component-1024x238.png 1024w, /wp-content/uploads/2019/11/cosmos-input-component-800x186.png 800w, /wp-content/uploads/2019/11/cosmos-input-component-768x178.png 768w, /wp-content/uploads/2019/11/cosmos-input-component-1536x357.png 1536w, /wp-content/uploads/2019/11/cosmos-input-component.png 2042w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>As you can see above, the&nbsp;<code>&lt;Input/&gt;</code>&nbsp;component is differentiated in three specialised components:&nbsp;<code>&lt;Choice/&gt;</code>,&nbsp;<code>&lt;Toggle/&gt;</code>&nbsp;and&nbsp;<code>&lt;Search/&gt;</code>. And this is how the files for these components are organised in our codebase:</p>
+
+
+
+<pre class="wp-block-preformatted">├── <strong>component-library</strong>/<br>│   │   ...<br>│   ├── gift/<br>│   ├── icon/<br>│   ├── <strong>input</strong>/<br>│   │   ├── Input.js<br>│   │   ├── Input.scss<br>│   │   ├── <strong>Choice</strong>.js<br>│   │   ├── <strong>Search</strong>.js<br>│   │   ├── <strong>Toggle</strong>.js<br>│   ├── mark/<br>│   ├── modal/<br>│   │   ...</pre>
+
+
+
+<p>To be consistent with this structure, the design tokens for this group of components are saved in&nbsp;<code>tokens/src/globals/<strong>input</strong>/index.json</code>&nbsp;and the values are declared using this nested format:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>input</strong>": {<br>    "<strong>choice</strong>": {<br>      "size": {<br>        "value": "24px"<br>      }<br>    },<br>    "<strong>toggle</strong>": {<br>      "width": {<br>        "value": "40px"<br>      },<br>      "height": {<br>        "value": "24px"<br>      }<br>    },<br>    "<strong>search</strong>": {<br>      "height": {<br>        "value": "32px"<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>The generated variables, that are then used in the source code for these components, preserve this ‘no-brainer’ naming convention:</p>
+
+
+
+<pre class="wp-block-preformatted">$<strong>token-input-choice-size</strong>: 24px;<br>$<strong>token-input-toggle-width</strong>: 40px;<br>$<strong>token-input-toggle-height</strong>: 24px;<br>$<strong>token-input-search-height</strong>: 32px;</pre>
+
+
+
+<p>(As you may have noticed, my generated variables have a “token” prefix. I’ll explain more on this later).</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>Another important result of this kind of organisation is how it’s easy to use “aliases” or refer to other token values from within different components.</p>
+
+
+
+<p>For example, for the brands’&nbsp;<em>primary</em>&nbsp;and&nbsp;<em>secondary</em>&nbsp;colors, I have not declared them as tokens, but as&nbsp;<em>aliases</em>:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>alias</strong>": {<br>    "<strong>colour</strong>": {<br>      "<strong>brand</strong>": {<br>        "<strong>primary</strong>": {<br>          "value": "#bada22"<br>        },<br>        "<strong>secondary</strong>": {<br>          "value": "#c0ffee"<br>        }<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>In this way I was able to use them directly in the&nbsp;<em>/global</em>&nbsp;color declarations:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>colour</strong>": {<br>    "<strong>primary</strong>": {<br>      "value": "{<strong>alias.colour.brand.primary.value</strong>}"<br>    },<br>    "<strong>secondary</strong>": {<br>      "value": "{<strong>alias.colour.brand.secondary.value</strong>}"<br>    },<br>    ...<br>  }<br>}</pre>
+
+
+
+<p>Similarly,&nbsp;<strong>I can reference the value of another component’s token inside a different component</strong>.</p>
+
+
+
+<p>For example, this is the file for the&nbsp;<code>&lt;Icon/&gt;</code>&nbsp;component:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>icon</strong>": {<br>    "size": {<br>      "xsm": { "value": "10px" },<br>      "sm": { "value": "16px" },<br>      "md": { "value": "22px" },<br>      "lg": { "value": "30px" },<br>      "xlg": { "value": "36px" },<br>      "xxlg": { "value": "46px"       }<br>    },<br>    "<strong>jumbo-size</strong>": {<br>      "<strong>md</strong>": { "value": "{<strong>brick.size.md.value</strong>}" },<br>      "<strong>lg</strong>": { "value": "{<strong>brick.size.lg.value</strong>}" }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>where this is the file for the&nbsp;<code>&lt;Brick/&gt;</code>&nbsp;component, that contains the actual token values:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>brick</strong>": {<br>    "<strong>size</strong>": {<br>      "xxsm": {...},<br>      "sm": {...},<br>      "<strong>md</strong>": { "value": "100px" },<br>      "<strong>lg</strong>": { "value": "120px" },<br>      "xlg": {...}<br>    }<br>  }<br>}</pre>
+
+
+
+<p>As you can see, I have been able to express the correlation (decided by the designers) between the size of the&nbsp;<em>Brick</em>&nbsp;element and the ‘jumbo’ size of the&nbsp;<em>Icon</em>&nbsp;element, in a very simple, clear and — above all — semantic way.</p>
+
+
+
+<p>Now, not only Style Dictionary allows this seamless management of the “aliases” values, but, even better,&nbsp;<strong>the order in which the files are imported is not relevant in term of resolution of the aliases!</strong></p>
+
+
+
+<p>This means you can have complete freedom in how you want to organise the tokens for your project. I suggest to play around with the structure of your design tokens and find the configuration that better suits your needs.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p>One last thing, before moving to the actual build process of the declared design tokens. As I mentioned before, one feature that you get “for free” with Style Dictionary, is that every attribute that you associate to a property in a source JSON file is transparently and automatically passed down along the transformations and will appear in the output files.</p>
+
+
+
+<p>For example, if you write this declaration:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>button</strong>": {<br>    "<strong>meta</strong>": {<br>      "<strong>description</strong>": "design tokens for the button component"<br>    },<br>    "<strong>border</strong>": {<br>      "width": {<br>        "value": "1px",<br>        "<strong>documentation</strong>": {<br>          "<strong>comment</strong>": "the width of the border"<br>        }<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>the generated JSON file is this:</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "<strong>button</strong>": {<br>    "<strong>meta</strong>": {<br>      "<strong>description</strong>": "design tokens for the button component"<br>    },<br>    "<strong>border</strong>": {<br>      "width": {<br>        "value": "1px",<br>        "<strong>documentation</strong>": {<br>          "<strong>comment</strong>": "the width of the border"<br>        },<br>        "original": {...},<br>        "name": "<strong>button-border-width</strong>",<br>        "attributes": {...},<br>        "path": [...]<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>As you can see, whatever you add in term of extra attributes to the original JSON files is preserved and passed down during the build process (of course, if the format of the generated file supports this kind of representation).</p>
+
+
+
+<p>This means two important things: first,&nbsp;you can use it to associate meta-information to your tokens (for example, I use it to add documentation, comments and notes to them, to be shown in the style guide); second, you can create custom&nbsp;<em>actions</em>&nbsp;or&nbsp;<em>transforms</em>&nbsp;in your build process, where you can use these extra attributes to selectively decide if/how to process the values.</p>
+
+
+
+<p>One last cool thing:&nbsp;if you simply add a&nbsp;<code>comment</code>&nbsp;property to a value, this is automatically added as a comment in the exported Scss file (actually, all the file formats that support comments):</p>
+
+
+
+<pre class="wp-block-preformatted">{<br>  "button": {<br>    "border": {<br>      "width": {<br>        "<strong>value</strong>": "1px",<br>        "<strong>comment</strong>": "this is a comment"<br>      }<br>    }<br>  }<br>}</pre>
+
+
+
+<p>this will generate in output:</p>
+
+
+
+<pre class="wp-block-preformatted">$button-border-width: 1px; // this is a comment</pre>
+
+
+
+<p>Useful if you want to export some kind of minimal documentation associated with your design tokens.</p>
+
+
+
+<p>This is just one of many “cool” small details that make this library so well thought: I invite you to read the documentation, look at all the available options, and you will find many other gems like this.</p>
+
+
+
+<figure class="wp-block-embed aligncenter is-type-photo is-provider-giphy"><div class="wp-block-embed__wrapper">
+https://giphy.com/gifs/coffee-suicide-squad-harley-quinn-Wp0ZtQjgViqR2
+</div><figcaption>You’re halfway through… keep going!</figcaption></figure>
+
+
+
+<h4 class="wp-block-heading" id="8e31">My (custom) build process</h4>
+
+
+
+<p>As I said above, the simplest way to build your design tokens with Style Dictionary is to run in the&nbsp;<a href="https://amzn.github.io/style-dictionary/#/quick_start?id=cli" target="_blank" rel="noreferrer noopener"><strong>command line</strong></a>:</p>
+
+
+
+<pre class="wp-block-preformatted">style-dictionary build</pre>
+
+
+
+<p>You can pass modifiers to the command, to specify the path of the config file and the platform you want to build.</p>
+
+
+
+<p>Another possible way to build the tokens is using a&nbsp;<a href="https://amzn.github.io/style-dictionary/#/quick_start?id=node" target="_blank" rel="noreferrer noopener"><strong>Node script</strong></a>. Here as well you can build all the platforms with a simple command:</p>
+
+
+
+<pre class="wp-block-preformatted">const SD = <strong>require</strong>('style-dictionary').<strong>extend</strong>('<strong>config.json</strong>');
+SD.<strong>buildAllPlatforms</strong>();</pre>
+
+
+
+<p>or decide to build only specific ones using a similar method:</p>
+
+
+
+<pre class="wp-block-preformatted">SD.<strong>buildPlatform</strong>('web');</pre>
+
+
+
+<p>Now, as you can see from the code above, all the specifications of&nbsp;<strong>how</strong>&nbsp;to build the tokens are contained in a single place: the&nbsp;<strong>config</strong>&nbsp;file. Here is where you declare your&nbsp;<strong>source</strong>&nbsp;files, your&nbsp;<strong>destination</strong>&nbsp;folders, your&nbsp;<strong>platforms</strong>, your&nbsp;<strong>formats</strong>&nbsp;and the&nbsp;<strong>transformations</strong>&nbsp;that you want to apply to each token.</p>
+
+
+
+<p>Style Dictionary comes with&nbsp;<a href="https://amzn.github.io/style-dictionary/#/transform_groups?id=pre-defined-transform-groups" target="_blank" rel="noreferrer noopener">a set of pre-defined&nbsp;<strong>transform groups</strong></a>, (e.g&nbsp;<code>web</code>,&nbsp;<code>scss</code>,&nbsp;<code>less</code>,&nbsp;<code>html</code>,&nbsp;<code>android</code>,&nbsp;<code>ios</code>,&nbsp;<code>assets</code>). As the name says, they are just a group of&nbsp;<a href="https://amzn.github.io/style-dictionary/#/transforms?id=transforms" target="_blank" rel="noreferrer noopener"><strong>transforms</strong></a>, which in turn are nothing more than&nbsp;<strong><em>functions</em></strong>&nbsp;that<em>&nbsp;“transform a property so that each platform can consume the property in different ways”</em>.</p>
+
+
+
+<p>Some of these&nbsp;<strong>transform functions</strong>&nbsp;are applied to the&nbsp;<strong>name</strong>&nbsp;of a token (e.g.&nbsp;<code>name/cti/camel</code>&nbsp;or&nbsp;<code>name/cti/kebab</code>), some to its&nbsp;<strong>value</strong>&nbsp;(e.g.&nbsp;<code>color/hex</code>&nbsp;or&nbsp;<code>size/rem</code>&nbsp;or&nbsp;<code>time/seconds</code>) and some to its&nbsp;<strong>attributes</strong>&nbsp;(e.g.&nbsp;<code>attribute/cti</code>).</p>
+
+
+
+<p>Now, because these functions operate directly on the&nbsp;<em>name</em>,&nbsp;<em>value</em>&nbsp;and&nbsp;<em>attributes</em>&nbsp;of a token, it means that they are somehow coupled with the way you want to declare your properties and values. For example, for some reason you could declare a “time” value with or without the unit of measure (it depends on who will consume your tokens, and how they will expect the data formatted), but the&nbsp;<code>time/seconds</code>&nbsp;transform&nbsp;<em>“assumes a time in milliseconds and transforms it into a decimal”,</em>&nbsp;which means you can use it only if you use that specific input format. In a similar way, almost all the&nbsp;<code>size/**</code>transforms assume a number as an input value, and are applied only to tokens that match the&nbsp;<code>category === 'size'</code>&nbsp;condition (which is not necessarily your use case).</p>
+
+
+
+<p>Now, as explained above, I wanted to have a very specific organisation of the generated files for the different platforms: not only have specific formats for each one of them (Web, iOS and Android) saved in their corresponding folder, but I also needed all the possible combinations/permutations of&nbsp;<em>platform</em>&nbsp;and&nbsp;<em>brand</em>&nbsp;made available for the style guide.</p>
+
+
+
+<p>I&nbsp;also wanted to have complete freedom in how I organised and declared the key/values properties for the tokens, to be able to manipulate them at will.</p>
+
+
+
+<p>So I decided to venture in creating a custom build script leveraging the APIs made available by the Style Dictionary library. I started out of&nbsp;<a href="https://amzn.github.io/style-dictionary/#/build_process?id=node" target="_blank" rel="noreferrer noopener">the example described in the documentation</a></p>
+
+
+
+<pre class="wp-block-preformatted">const StyleDictionary = require('style-dictionary');
+
+const styleDictionary = StyleDictionary.extend( 'config.json' );
+
+// You can also extend with an object
+// const styleDictionary = StyleDictionary.extend({ ... });
+
+// you can call buildAllPlatforms or buildPlatform('...')
+styleDictionary.buildAllPlatforms();</pre>
+
+
+
+<p>Reading the code, it was immediately clear to me what options I had: I could refer to an external&nbsp;<em>config.json</em>&nbsp;file or pass a custom object to the&nbsp;<em>extend</em>&nbsp;method; and I could build all the platforms at once via&nbsp;<em>buildAllPlatforms</em>&nbsp;or be more granular and use&nbsp;<em>buildPlatform</em>, with possibly a different configuration object for each platform.</p>
+
+
+
+<p>With just these two options, it didn’t take me long to create my first build script. After a few attempts and iterations, my build script looked like this:</p>
+
+
+
+<pre class="wp-block-preformatted">const StyleDictionaryPackage = require('./build-style-dictionary-package');
+const getStyleDictionaryConfig = require('./build-style-dictionary-config');
+
+console.log('Build started...');
+
+// PROCESS THE DESIGN TOKENS FOR THE DIFFEREN BRANDS AND PLATFORMS<strong>['web', 'ios', 'android']</strong>.map(function(platform) {
+    <strong>['brand#1', 'brand#2', 'brand#3']</strong>.map(function(brand) {
+        console.log('\n======================================');
+        console.log(`\nProcessing: [${platform}] [${brand}]`);
+        const StyleDictionary = StyleDictionaryPackage.extend(<strong>getStyleDictionaryConfig(brand, platform)</strong>);
+        if (platform === 'web') {
+            StyleDictionary.<strong>buildPlatform</strong>('web/js');
+            StyleDictionary.buildPlatform('web/json');
+            StyleDictionary.buildPlatform('web/scss');
+        } else if (platform === 'ios') {
+            StyleDictionary.buildPlatform('ios');
+        } else if (platform === 'android') {
+            StyleDictionary.buildPlatform('android');
+        }
+        StyleDictionary.buildPlatform('styleguide');
+        console.log('\nEnd processing');
+    })
+})
+
+console.log('\n======================================');
+console.log('\nBuild completed!');</pre>
+
+
+
+<p>What I am doing here is simple: I am looping through all the&nbsp;<em>platforms</em>&nbsp;and&nbsp;<em>brands</em>&nbsp;that I have; for each combination, I am running a specific build, which receives a dynamic&nbsp;<em>config</em>&nbsp;object, with&nbsp;<em>platform</em>&nbsp;and&nbsp;<em>brand</em>&nbsp;as parameters.</p>
+
+
+
+<p>The&nbsp;<code>getStyleDictionaryConfig</code>&nbsp;is no more than a function, that returns the config object specific for that&nbsp;<em>platform</em>&nbsp;+&nbsp;<em>brand</em>&nbsp;combination:</p>
+
+
+
+<pre class="wp-block-preformatted">function <strong>getStyleDictionaryConfig</strong>(brand, platform) {
+    return {
+        "source": [
+            `src/brands/<strong>${brand}</strong>/*.json`,
+            "src/globals/**/*.json",
+            `src/platforms/<strong>${platform}</strong>/*.json`
+        ],
+        "platforms": {
+            "web/js": {
+                "transformGroup": "tokens-js",
+                "buildPath": `dist/web/<strong>${brand}</strong>/`,
+                "files": [
+                    {
+                        "destination": "tokens.es6.js",
+                        "format": "javascript/es6"
+                    }
+                ]
+            },
+            "web/json": {
+                "transformGroup": "tokens-json",
+                "buildPath": `dist/web/<strong>${brand}</strong>/`,
+                "files": [
+                    {
+                        "destination": "tokens.json",
+                        "format": "json/flat"
+                    }
+                ]
+            },
+            "web/scss": {
+                "transformGroup": "tokens-scss",
+                "buildPath": `dist/web/<strong>${brand}</strong>/`,
+                "files": [
+                    {
+                        "destination": "tokens.scss",
+                        "format": "scss/variables"
+                    }
+                ]
+            },
+            "styleguide": {
+                "transformGroup": "styleguide",
+                "buildPath": `dist/styleguide/`,
+                "files": [
+                    {
+                        "destination": `<strong>${platform}_${brand}</strong>.json`,
+                        "format": "json/flat"
+                    },
+                    {
+                        "destination": `<strong>${platform}_${brand}</strong>.scss`,
+                        "format": "scss/variables"
+                    }
+                ]
+            },
+            ... // more declarations here
+        }
+    };
+}
+
+module.exports = getStyleDictionaryConfig;</pre>
+
+
+
+<p>Once I saw that this “proof of concept” worked, I started to tinker around the configuration object and see how much I could push the customisation of the design tokens to suit my very own specific “needs”. The results were beyond all possible expectations: using — once again — the&nbsp;<a href="https://amzn.github.io/style-dictionary/#/api?id=api" target="_blank" rel="noreferrer noopener">APIs made available by Style Dictionary</a>, in no time and with a minimal effort I was able to introduce custom&nbsp;<a href="https://amzn.github.io/style-dictionary/#/api?id=registerformat" target="_blank" rel="noreferrer noopener">formats</a>, custom&nbsp;<a href="https://amzn.github.io/style-dictionary/#/api?id=registertransform" target="_blank" rel="noreferrer noopener">transforms</a>&nbsp;and&nbsp;<a href="https://amzn.github.io/style-dictionary/#/api?id=registertransformgroup" target="_blank" rel="noreferrer noopener">transform groups</a>, and later on even custom&nbsp;<a href="https://amzn.github.io/style-dictionary/#/api?id=registertemplate" target="_blank" rel="noreferrer noopener">template</a>&nbsp;files, tuning every single detail in the generated files.</p>
+
+
+
+<p>At the end of this process, my dynamic configuration file looked like this:</p>
+
+
+
+<pre class="wp-block-preformatted">function <strong>getStyleDictionaryConfig</strong>(brand, platform) {<br>    return {<br>        "source": [<br>            `src/brands/${brand}/*.json`,<br>            "src/globals/**/*.json",<br>            `src/platforms/${platform}/*.json`<br>        ],<br>        "platforms": {<br>            "web/js": {<br>                <strong>"transformGroup": "tokens-js",</strong><br>                "buildPath": `dist/web/${brand}/`,<br>                <strong>"prefix": "token"</strong>,<br>                "files": [<br>                    {<br>                        "destination": "tokens.es6.js",<br>                        <strong>"format": "javascript/es6"</strong><br>                    }<br>                ]<br>            },<br>            "web/json": {<br>                <strong>"transformGroup": "tokens-json",</strong><br>                "buildPath": `dist/web/${brand}/`,<br>                "prefix": "token",<br>                "files": [<br>                    {<br>                        "destination": "tokens.json",<br>                        <strong>"format": "json/flat"</strong><br>                    }<br>                ]<br>            },<br>            "web/scss": {<br>                <strong>"transformGroup": "tokens-scss",</strong><br>                "buildPath": `dist/web/${brand}/`,<br>                "prefix": "token",<br>                "files": [<br>                    {<br>                        "destination": "tokens.scss",<br>                        <strong>"format": "scss/variables"</strong><br>                    }<br>                ]<br>            },<br>            "styleguide": {<br>                <strong>"transformGroup": "styleguide",</strong><br>                "buildPath": `dist/styleguide/`,<br>                "prefix": "token",<br>                "files": [<br>                    {<br>                        "destination": `${platform}_${brand}.json`,<br>                        <strong>"format": "json/flat"</strong><br>                    },<br>                    {<br>                        "destination": `${platform}_${brand}.scss`,<br>                        <strong>"format": "scss/variables"</strong><br>                    }<br>                ]<br>            },<br>            "ios": {<br>                <strong>"transformGroup": "tokens-ios",</strong><br>                "buildPath": `dist/ios/${brand}/`,<br>                "prefix": "token",<br>                "files": [<br>                    {<br>                        "destination": "tokens-all-generic.plist",<br>                        <strong>"template": "ios/generic.plist"</strong><br>                    },<br>                    ...<br>                ]<br>            },<br>            "android": {<br>                <strong>"transformGroup": "android",</strong><br>                "buildPath": `dist/android/${brand}/`,<br>                "prefix": "token",<br>                "files": [<br>                    {<br>                        "destination": "tokens-all-generic.xml",<br>                        <strong>"template": "android/generic"</strong><br>                    },<br>                    ...<br>                ]<br>            }<br>        }<br>    };<br>}</pre>
+
+
+
+<p>The custom functions are all declared in the “package” file, which looks like this:</p>
+
+
+
+<pre class="wp-block-preformatted">const StyleDictionaryPackage = require('style-dictionary');
+
+// === CUSTOM FORMATS ===
+
+StyleDictionaryPackage.<strong>registerFormat</strong>({
+    name: <strong>'json/flat'</strong>,
+    formatter: function(dictionary) {
+        return JSON.stringify(dictionary.allProperties, null, 2);
+    }
+});
+
+// === CUSTOM TRANSFORMS ===
+
+StyleDictionaryPackage.<strong>registerTransform</strong>({
+    name: <strong>'size/pxToPt'</strong>,
+    type: 'value',
+    matcher: function(prop) {
+        return prop.value.match(/^[\d\.]+px$/);
+    },
+    transformer: function(prop) {
+        return prop.value.replace(/px$/, 'pt');
+    }
+});
+
+...
+
+// === CUSTOM TRANSFORM GROUPS ===
+
+StyleDictionaryPackage.<strong>registerTransformGroup</strong>({
+    name: <strong>'styleguide'</strong>,
+    transforms: ["attribute/cti", "name/cti/kebab", "size/px", "color/css"]
+});
+
+StyleDictionaryPackage.<strong>registerTransformGroup</strong>({
+    name: <strong>'tokens-js'</strong>,
+    transforms: ["name/cti/constant", "size/px", "color/hex"]
+});
+
+StyleDictionaryPackage.<strong>registerTransformGroup</strong>({
+    name: <strong>'tokens-scss'</strong>,
+    transforms: [ "name/cti/kebab", "time/seconds", "size/px", "color/css" ]
+});
+
+StyleDictionaryPackage.<strong>registerTransformGroup</strong>({
+    name: <strong>'tokens-ios'</strong>,
+    transforms: [ "attribute/cti", "name/cti/camel", "size/pxToPt"]
+});
+
+StyleDictionaryPackage.<strong>registerTransformGroup</strong>({
+    name: <strong>'tokens-android'</strong>,
+    transforms: [ "attribute/cti", "name/cti/camel", "size/pxToDp"]
+});
+
+// === CUSTOM TEMPLATES ===
+
+StyleDictionaryPackage.<strong>registerTemplate</strong>({
+    name: <strong>'ios/generic.plist'</strong>,
+    template: __dirname + '/templates/ios-generic.template'
+});
+
+...
+
+StyleDictionaryPackage.<strong>registerTemplate</strong>({
+    name: <strong>'android/generic.xml'</strong>,
+    template: __dirname + '/templates/android-generic.template'
+});
+
+...</pre>
+
+
+
+<p>Essentially, what is happening here is that — instead of using the formats and transforms offered out-of-the-box by Style Dictionary — I am creating&nbsp;<strong>custom functions</strong>&nbsp;(each one of which consists of just a few lines of code, and are all quite very similar). The&nbsp;<strong>names</strong>&nbsp;of these functions are then the parameters that are used to declare the formats, transforms, transform groups, and templates in the&nbsp;<strong>configuration</strong>&nbsp;of the build process. Simple as that!</p>
+
+
+
+<p>The great thing about this is that everything is just plain JavaScript, and&nbsp;<a href="https://amzn.github.io/style-dictionary/#/api?id=api" target="_blank" rel="noreferrer noopener">the APIs are well documented</a>, so even a non-developer like me can create a custom build with a few lines of code (for me, this was a game changer).</p>
+
+
+
+<p>If you want to see the entire&nbsp;<strong><em>build.js</em></strong>&nbsp;file in the demo project, and how the different parts connect one with the other, here is the link:&nbsp;<a href="https://github.com/didoo/style-dictionary-demo/blob/master/build.js" target="_blank" rel="noreferrer noopener">https://github.com/didoo/style-dictionary-demo/blob/master/build.js</a></p>
+
+
+
+<p>A few interesting tips &amp; tricks that I’ve found out in the process, in case you want to do something similar for your build script:</p>
+
+
+
+<ul class="wp-block-list"><li>you can&nbsp;<strong>override the names of the pre-defined functions</strong>&nbsp;(eg. you can register a&nbsp;<code>size/px</code>&nbsp;or a&nbsp;<code>time/seconds</code>&nbsp;function even if already exists)</li><li>you can use the&nbsp;<strong><em>prefix</em>&nbsp;property</strong>&nbsp;to prepend a string to the tokens names</li><li>to get the&nbsp;<strong>list of pre-defined transform values</strong>&nbsp;in the transform groups (e.g.&nbsp;<em>[‘attribute/cti’, ‘name/cti/pascal’, ‘size/rem’, ‘color/hex’]</em>&nbsp;for the ‘JS’ group) you can do&nbsp;<code>console.log(StyleDictionary.transformGroup[‘js’])</code>&nbsp;in your script and read the output in the command line shell</li><li>you can add&nbsp;<strong>custom meta-information</strong>&nbsp;to the tokens, and use it later in your&nbsp;<strong>filter/matcher functions</strong>&nbsp;and in the&nbsp;<strong>logic of your templates</strong></li><li>you can add a&nbsp;<strong><em>filter</em></strong>&nbsp;declaration to a&nbsp;<em>file</em>&nbsp;block, to include only certain tokens values in the generated output files, based on some of their props (useful if you want to split the tokens into different files).</li></ul>
+
+
+
+<p>As you can see from the example above, using the&nbsp;<strong><em>registerTemplate</em></strong>&nbsp;function I have registered custom templates to generate PLIST and XML files in output for iOS and Android. The reason for that is that I wanted to have full control over the format of the generated files for these platforms, to meet the technical requirement that the native developers had, in order to adopt and consume the design tokens in their codebases.</p>
+
+
+
+<p>If you want to do the same, and create&nbsp;<strong>your own templates</strong>, keep in mind that Style Dictionary uses the not-so-common&nbsp;<a href="https://lodash.com/docs#template" target="_blank" rel="noreferrer noopener">lodash function</a>&nbsp;<code>_.template()</code>&nbsp;to “compile” the templates. You will find almost nothing about this templating engine, apart from the&nbsp;<a href="https://lodash.com/docs#template" target="_blank" rel="noreferrer noopener">official lodash documentation</a>. The engine itself is pretty basic, but you can rely on Node/JavaScript to manipulate/format the values and the output. So my suggestion is to read carefully the&nbsp;<em>examples</em>&nbsp;section in the documentation of that function, where you can see what it can do, and infer what it can’t do, compared to other templating engines (remember that,&nbsp;<a href="https://amzn.github.io/style-dictionary/#/templates?id=using-a-different-templating-language" target="_blank" rel="noreferrer noopener">according to the documentation</a>, if you want you can use different templating languages, like Handlebars or similar: it’s up to you).</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p><strong><em>Beware</em></strong><em>: I’ll stress it again, because I want to be clear on this. What I have done is not what I suggest you to do, unless you have a very clear idea of what you need and what you want to achieve. Style Dictionary comes with a lot of&nbsp;</em><strong><em>pre-defined defaults</em></strong><em>, that most probably&nbsp;</em><strong><em>will work for you</em></strong><em>. Before starting to dig into all the possible customisations that you can have, try the default settings offered by the library, look at the output files, and see if they can suit your needs. Probably they will do. If they don’t, think how you want the output files generated, and see which one of the API methods you can use for that specific scope.</em></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<h4 class="wp-block-heading" id="e403">The generated design token files</h4>
+
+
+
+<p>We have seen how to set up a project with Style Dictionary and how to run a custom build. But what are the final results? How do the generated design token files look like? Well, here they are.</p>
+
+
+
+<p>This is the output as&nbsp;<strong>Scss</strong>&nbsp;file for the&nbsp;<strong>web</strong>&nbsp;platform:</p>
+
+
+
+<pre class="wp-block-preformatted">// <strong>./dist/web/brand#1/tokens.scss</strong>
+
+$<strong>token-alias-color-brand-primary</strong>: #<strong>3B5998</strong>;
+$token-alias-color-brand-secondary: #4267B2;
+$<strong>token-avatar-size-xxsm</strong>: <strong>36px</strong>;
+...</pre>
+
+
+
+<p>As explained above, the variable names have a&nbsp;<em>“token”</em>&nbsp;prefix, that we use to differentiate the Scss variables that come from the design tokens from the normal variables declared in the Scss files.</p>
+
+
+
+<p>This the&nbsp;<strong>ES6</strong>&nbsp;JavaScript format file:</p>
+
+
+
+<pre class="wp-block-preformatted">// <strong>./dist/web/brand#1/tokens.es6.js</strong>
+
+export const <strong>TOKEN_ALIAS_COLOR_BRAND_PRIMARY</strong> = '#<strong>3B5998</strong>';
+export const TOKEN_ALIAS_COLOR_BRAND_SECONDARY = '#4267B2';
+export const <strong>TOKEN_AVATAR_SIZE_XXSM</strong> = '<strong>36px</strong>';
+...</pre>
+
+
+
+<p>And this the&nbsp;<strong>flat JSON</strong>&nbsp;file:</p>
+
+
+
+<pre class="wp-block-preformatted">// <strong>./dist/web/brand#1/tokens.json</strong>
+
+[
+  {
+    "value": "#<strong>3B5998</strong>",
+    "type": "color",
+    "comment": "this is a comment",
+    "original": {
+      "value": "#3B5998",
+      "type": "color",
+      "comment": "this is a comment"
+    },
+    "name": "<strong>token-alias-color-brand-primary</strong>",
+    "attributes": {
+      "category": "alias",
+      "type": "color",
+      "item": "brand",
+      "subitem": "primary"
+    },
+    "path": [
+      "alias",
+      "color",
+      "brand",
+      "primary"
+    ]
+  },
+  {
+    "value": "#4267B2",
+    "type": "color",
+    "comment": "this one is a comment too",
+    "original": {
+      "value": "#4267B2",
+      "type": "color",
+      "comment": "this one is a comment too"
+    },
+    "name": "token-alias-color-brand-secondary",
+    "attributes": {
+      "category": "alias",
+      "type": "color",
+      "item": "brand",
+      "subitem": "secondary"
+    },
+    "path": [
+      "alias",
+      "color",
+      "brand",
+      "secondary"
+    ]
+  },
+  {
+    "value": "<strong>36px</strong>",
+    "original": {
+      "value": "36px"
+    },
+    "name": "<strong>token-avatar-size-xxsm</strong>",
+    "attributes": {
+      "category": "avatar",
+      "type": "size",
+      "item": "xxsm"
+    },
+    "path": [
+      "avatar",
+      "size",
+      "xxsm"
+    ]
+  },
+  ...
+]</pre>
+
+
+
+<p>As you can see, the flat JSON file exposes all the extra properties and meta-informations attached to the design token properties, and makes the design tokens ready to be further consumed/processed by other tools (eg. a style guide, like in our case) in a very simple and straightforward way.</p>
+
+
+
+<p>Similarly, for the native platforms, this is the output format for&nbsp;<strong>iOS</strong>:</p>
+
+
+
+<pre class="wp-block-preformatted">// <strong>./dist/ios/brand#1/tokens-all.plist</strong>
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "<a rel="noreferrer noopener" href="http://www.apple.com/DTDs/PropertyList-1.0.dtd" target="_blank">http://www.apple.com/DTDs/PropertyList-1.0.dtd</a>"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+    &lt;key&gt;<strong>tokenAliasColorBrandPrimary</strong>&lt;/key&gt;&lt;string&gt;#<strong>3B5998</strong>&lt;/string&gt;
+    &lt;key&gt;tokenAliasColorBrandSecondary&lt;/key&gt;&lt;string&gt;#4267B2&lt;/string&gt;
+    &lt;key&gt;<strong>tokenAvatarSizeXxsm</strong>&lt;/key&gt;&lt;string&gt;<strong>36pt</strong>&lt;/string&gt;
+    ...
+&lt;/dict&gt;</pre>
+
+
+
+<p>And this is the output for&nbsp;<strong>Android</strong>:</p>
+
+
+
+<pre class="wp-block-preformatted">// <strong>./dist/android/brand#1/tokens-all.xml</strong>
+
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;resources&gt;
+    &lt;color name="<strong>token_alias_color_brand_primary</strong>"&gt;#<strong>3B5998</strong>&lt;/color&gt;
+    &lt;color name="token_alias_color_brand_secondary"&gt;#4267B2&lt;/color&gt;
+    &lt;item name="<strong>token_avatar_size_xxsm</strong>" type="dimen"&gt;<strong>36dp</strong>&lt;/item&gt;    ...
+&lt;/resources&gt;</pre>
+
+
+
+<p>As you can see, for the native platforms I have converted the&nbsp;<em>px</em>&nbsp;values to&nbsp;<em>pt/dp</em>, while I have left the color values expressed in&nbsp;<em>hex</em>&nbsp;format. This is because both our iOS and Android application projects have already in place custom functions that can read hex values from PLIST and XML “style” files. Of course, this format is very specific to us, and you may need completely different formats. Before starting, I suggest you to speak with your iOS/Android developers and agree on which one is the best format for them (this may require the creation of custom formats/transforms/templates, as discussed above).</p>
+
+
+
+<h4 class="wp-block-heading" id="7408">The example project on Github</h4>
+
+
+
+<p>As I have already mentioned, I have created a repository with an example very similar to the way I have set up the design tokens for our Design System at Badoo. You can see the demo at this GitHub address:</p>
+
+
+
+<p><a href="http://github.com/didoo/style-dictionary-demo">http://github.com/didoo/style-dictionary-demo</a></p>
+
+
+
+<p>Here is a quick overview of the project structure:</p>
+
+
+
+<ul class="wp-block-list"><li>the /<em>src</em>&nbsp;folder contains the JSON files used in input, each one of them containing the&nbsp;<em>key/value/attributes</em>&nbsp;tokens declarations</li><li>the&nbsp;<em>/dist</em>&nbsp;folder contains the generated files, in different formats for the different target platforms</li><li>the&nbsp;<em>/templates</em>&nbsp;folder contains the template files used to generate the files</li><li>the&nbsp;<em>/build.js</em>&nbsp;contains the entire build task, from the declarations of the custom functions, to the build configuration, to the actual build runner.</li></ul>
+
+
+
+<p>It’s a relatively simple use case, but shows — quite clearly, I hope — how to set up and configure a&nbsp;Style Dictionary project that can handle multi-brand multi-platform design tokens.&nbsp;As I said, feel free to use it for inspiration, or as a starting point for your own implementation.</p>
+
+
+
+<h4 class="wp-block-heading" id="bf22">Conclusions/Final thoughts</h4>
+
+
+
+<p>I have already said a lot, so I’ll try to be concise at least in the conclusions.</p>
+
+
+
+<p>In the last days, weeks, I have used extensively Style Dictionary, and every time I find myself thinking&nbsp;<em>“</em><strong><em>Wow. It just works!</em></strong><em>”</em>. Everything in this project works as one would expect to, everything is so well-thought and clear (credits to&nbsp;<a href="https://twitter.com/dbanksDesign" target="_blank" rel="noreferrer noopener">Danny Banks</a>&nbsp;for this) that the learning curve is almost zero. In no time you’ll find yourself doing things that you would have only dreamed of.</p>
+
+
+
+<p>The best description of this library can be found in the&nbsp;<a href="https://github.com/amzn/style-dictionary/blob/master/CONTRIBUTING.md#what-transformstransform-groupsformatstemplates-should-be-included" target="_blank" rel="noreferrer noopener">contributing.md</a>&nbsp;file:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>The spirit of this framework is to allow flexibility and modularity so that anyone can fit it to their needs. This is why you can write your own transforms, formats, and templates with the register methods.</p></blockquote>
+
+
+
+<p>And I think&nbsp;<strong>flexibility</strong>&nbsp;is the keyword here. It’s no coincidence that one of the comments about Style Dictionary that I’ve read in the Design Systems Slack channel, was this one:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p>“I guess what I am seeing so far is it is ridiculously flexible” — Mark Johnston</p></blockquote>
+
+
+
+<p>So, if you had any doubts about starting to use design tokens in your system, now you have no more excuses:&nbsp;<strong>Style Dictionary is the perfect solution</strong>.</p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<figure class="wp-block-embed is-type-photo is-provider-giphy"><div class="wp-block-embed__wrapper">
+https://giphy.com/gifs/tvland-television-26xBPu3CB5YLSAKuA
+</div><figcaption>THE END.</figcaption></figure>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p><strong>Update:</strong></p>
+
+
+
+<p>I have written a follow-up post, about how in Cosmos we use design tokens beyond colors, typography &amp; spacing, how we add meta-information to filter/group/post-process them, how powerful they are to describe component properties and specifications: <a href="https://medium.com/bumble-tech/design-tokens-beyond-colors-typography-and-spacing-ad7c98f4f228?source=post_page-----98c795b938aa----------------------">Design Tokens beyond colors, typography, and spacing</a></p>
+
+
+
+<hr class="wp-block-separator is-style-dots"/>
+
+
+
+<p><em>Originally published on <a href="https://medium.com/@didoo/how-to-manage-your-design-tokens-with-style-dictionary-98c795b938aa">Medium</a> on September 27, 2018</em></p>
+
+
+
+<p></p>
+
+				<!-- external link -->
+				
+			</div>
+	
+		</section>
+				
+		<aside>
+	
+			<!-- abstract -->
+			
+			<!-- date -->
+			<p class="date"><strong>Date:</strong> <time datetime="2018-09-17T10:39:00+01:00">September 17, 2018</time></p>
+
+			<!-- tags -->
+						<p class="tags"><strong>Tags:</strong> <a href="/tags/design-system/" rel="tag">Design System</a><a href="/tags/design-tokens/" rel="tag">Design Tokens</a></p>
+			
+
+		</aside>
+		
+		<div class="goto">
+			<a class="goto_index" href="/">Go to blog index</a>
+			<span class="goto_prevnext">
+				<a href="/2018/04/keep-it-simple-stupid/" rel="prev">Keep it simple, stupid!</a>				<a href="/2018/12/generating-multi-brand-multi-platform-icons-with-sketch-and-a-node-js-script-part-1/" rel="next">Generating multi-brand multi-platform icons with Sketch and a Node.js script — Part #1</a>			</span>
+		</div>
+
+	
+</article>
+
+	
+	
+</body>
+</html>
